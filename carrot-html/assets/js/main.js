@@ -737,5 +737,6 @@
         $("body").addClass('body-bg-6').removeClass();
         $("#add_bg").remove();
     });
-
+    
+    console.log($)
 })(jQuery);
