@@ -1,6 +1,5 @@
 /* Header */
 header {
-    height: 142px;
     background-color: #fff;
     border-bottom: 1px solid $border-color;
 }
@@ -200,6 +199,7 @@ header {
                     &:before {
                         display: none;
                     }
+                    
                 }
             }
 
@@ -296,7 +296,7 @@ ul.navbar-nav {
                 content: "";
                 position: absolute;
                 top: auto;
-                bottom: -6px;
+                bottom: 0;
                 background-color: $main-primary-color;
                 left: 0;
                 right: auto;
@@ -433,7 +433,8 @@ ul.navbar-nav {
     }
 }
 
-.cr-cat-dropdown {
+.cr-cat-dropdown,
+.dropdown-menu {
     transition: all 0.3s ease-in-out;
     width: 600px;
     margin-top: 35px;
@@ -448,10 +449,12 @@ ul.navbar-nav {
     box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.071);
     border: 1px solid $border-color;
 
-    .cr-cat-tab {
+    .cr-cat-tab,
+    .dropdown-menu-tab {
         display: flex;
 
-        .cr-tab-list {
+        .cr-tab-list,
+        .dropdown-menu-tab-list {
             min-width: 180px;
             margin-right: 24px;
             border-radius: 5px;
@@ -774,6 +777,7 @@ ul.navbar-nav {
 
             .dropdown-menu {
                 right: 0;
+                
             }
         }
 
@@ -945,5 +949,15 @@ ul.navbar-nav {
             padding-right: 45px;
         }
         }
+    }
+}
+
+.navbar-expand-lg {
+    margin: 0 auto;
+}
+
+.search-input {
+    &::placeholder {
+        font-size: 16px !important;
     }
 }
