@@ -9,7 +9,7 @@
 	<meta name="description" content="Carrot - Admin.">
 	<meta name="author" content="ashishmaraviya">
 
-	<title>Staff.</title>
+	<title>Carrot - Admin.</title>
 
 	<!-- App favicon -->
 	<link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
@@ -17,7 +17,6 @@
 	<!-- Icon CSS -->
 	<link href="assets/css/vendor/materialdesignicons.min.css" rel="stylesheet">
 	<link href="assets/css/vendor/remixicon.css" rel="stylesheet">
-	<link href="assets/css/vendor/owl.carousel.min.css" rel="stylesheet">
 
 	<!-- Vendor CSS -->
 	<link href='assets/css/vendor/datatables.bootstrap5.min.css' rel='stylesheet'>
@@ -34,12 +33,12 @@
 </head>
 
 <body>
-	<main class="wrapper sb-default ecom">
+	<main class="wrapper sb-default">
 		<!-- Loader -->
 		<div id="cr-overlay">
 			<div class="loader"></div>
 		</div>
-
+		
 		<!-- Header -->
 		<header class="cr-header">
 			<div class="container-fluid">
@@ -62,9 +61,53 @@
 						</div>
 					</div>
 					<div class="right-header">
+						<div class="cr-right-tool cr-flag-drop language">
+							<div class="cr-hover-drop">
+								<div class="cr-hover-tool">
+									<img class="flag" src="assets/img/flag/us.png" alt="flag">
+								</div>
+								<div class="cr-hover-drop-panel right">
+									<ul>
+										<li><a href="javascript:void(0)"><img class="flag" src="assets/img/flag/us.png"
+													alt="flag">English</a></li>
+										<li><a href="javascript:void(0)"><img class="flag" src="assets/img/flag/in.png"
+													alt="flag">Hindi</a></li>
+										<li><a href="javascript:void(0)"><img class="flag" src="assets/img/flag/de.png"
+													alt="flag"> Deutsch</a></li>
+										<li><a href="javascript:void(0)"><img class="flag" src="assets/img/flag/it.png"
+													alt="flag">Italian</a></li>
+										<li><a href="javascript:void(0)"><img class="flag" src="assets/img/flag/jp.png"
+													alt="flag">Japanese</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="cr-right-tool apps">
+							<div class="cr-hover-drop">
+								<div class="cr-hover-tool">
+									<i class="ri-apps-2-line"></i>
+								</div>
+								<div class="cr-hover-drop-panel right">
+									<h6 class="title">Apps</h6>
+									<ul>
+										<li><a href="javascript:void(0)"><img class="app" src="assets/img/apps/1.png"
+													alt="flag">English</a></li>
+										<li><a href="javascript:void(0)"><img class="app" src="assets/img/apps/2.png"
+													alt="flag">Hindi</a></li>
+										<li><a href="javascript:void(0)"><img class="app" src="assets/img/apps/3.png"
+													alt="flag"> Deutsch</a></li>
+										<li><a href="javascript:void(0)"><img class="app" src="assets/img/apps/4.png"
+													alt="flag">Italian</a></li>
+										<li><a href="javascript:void(0)"><img class="app" src="assets/img/apps/5.png"
+													alt="flag">Japanese</a></li>
+										<li><a href="javascript:void(0)"><img class="app" src="assets/img/apps/6.png"
+													alt="flag">Japanese</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
 						<div class="cr-right-tool display-screen">
-							<a class="cr-screen full" href="javascript:void(0)"><i
-									class="ri-fullscreen-line"></i></a>
+							<a class="cr-screen full" href="javascript:void(0)"><i class="ri-fullscreen-line"></i></a>
 							<a class="cr-screen reset" href="javascript:void(0)"><i
 									class="ri-fullscreen-exit-line"></i></a>
 						</div>
@@ -73,6 +116,10 @@
 								<i class="ri-notification-2-line"></i>
 								<span class="label"></span>
 							</a>
+						</div>
+						<div class="cr-right-tool display-dark">
+							<a class="cr-mode dark" href="javascript:void(0)"><i class="ri-moon-clear-line"></i></a>
+							<a class="cr-mode light" href="javascript:void(0)"><i class="ri-sun-line"></i></a>
 						</div>
 						<div class="cr-right-tool cr-user-drop">
 							<div class="cr-hover-drop">
@@ -501,189 +548,26 @@
 			</div>
 		</div>
 
-		<!-- Main content -->
+		<!-- main content -->
 		<div class="cr-main-content">
 			<div class="container-fluid">
 				<!-- Page title & breadcrumb -->
-				<div class="cr-page-title">
+				<div class="cr-page-title cr-page-title-2">
 					<div class="cr-breadcrumb">
-						<h5>eCommerce</h5>
+						<h5>Vendor List</h5>
 						<ul>
 							<li><a href="index.html">Carrot</a></li>
-							<li>eCommerce</li>
+							<li>Vendor List</li>
 						</ul>
 					</div>
-					<div class="cr-tools">
-						<div id="pagedate">
-							<div class="cr-date-range" title="Date">
-								<span></span>
-							</div>
-						</div>
-					</div>
 				</div>
 				<div class="row">
-					<div class="col-xl-12">
-						<div class="row">
-							<div class="col-xl-3 col-md-6">
-								<div class="cr-card">
-									<div class="cr-card-content label-card">
-										<div class="title">
-											<span class="icon icon-1"><i class="ri-shield-user-line"></i></span>
-											<div class="growth-numbers">
-												<h4>Customers</h4>
-												<h5>857k</h5>
-											</div>
-										</div>
-										<p class="card-groth up">
-											<i class="ri-arrow-up-line"></i>
-											32%
-											<span>Last Month</span>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-3 col-md-6">
-								<div class="cr-card">
-									<div class="cr-card-content label-card">
-										<div class="title">
-											<span class="icon icon-2"><i class="ri-shopping-bag-3-line"></i></span>
-											<div class="growth-numbers">
-												<h4>Order</h4>
-												<h5>08.65k</h5>
-											</div>
-										</div>
-										<p class="card-groth down">
-											<i class="ri-arrow-down-line"></i>
-											1.7%
-											<span>Last Month</span>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-3 col-md-6">
-								<div class="cr-card">
-									<div class="cr-card-content label-card">
-										<div class="title">
-											<span class="icon icon-3"><i class="ri-money-dollar-circle-line"></i></span>
-											<div class="growth-numbers">
-												<h4>Revenue</h4>
-												<h5>$85746</h5>
-											</div>
-										</div>
-										<p class="card-groth down">
-											<i class="ri-arrow-down-line"></i>
-											3.8%
-											<span>Last Month</span>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-3 col-md-6">
-								<div class="cr-card">
-									<div class="cr-card-content label-card">
-										<div class="title">
-											<span class="icon icon-4"><i class="ri-exchange-dollar-line"></i></span>
-											<div class="growth-numbers">
-												<h4>Expenses</h4>
-												<h5>$75462</h5>
-											</div>
-										</div>
-										<p class="card-groth up">
-											<i class="ri-arrow-up-line"></i>
-											8%
-											<span>Last Month</span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xxl-8 col-xl-12">
-						<div class="cr-card revenue-overview">
-							<div class="cr-card-header header-575">
-								<h4 class="cr-card-title">Revenue Overview</h4>
-								<div class="header-tools">
-									<a href="javascript:void(0)" class="m-r-10 cr-full-card" title="Full Screen"><i
-											class="ri-fullscreen-line"></i></a>
-									<div class="cr-date-range date">
-										<span></span>
-									</div>
-								</div>
-							</div>
-							<div class="cr-card-content">
-								<div class="cr-chart-header">
-									<div class="block">
-										<h6>Orders</h6>
-										<h5>825
-											<span class="up"><i class="ri-arrow-up-line"></i>24%</span>
-										</h5>
-									</div>
-									<div class="block">
-										<h6>Revenue</h6>
-										<h5>$89k
-											<span class="up"><i class="ri-arrow-up-line"></i>24%</span>
-										</h5>
-									</div>
-									<div class="block">
-										<h6>Expence</h6>
-										<h5>$68k
-											<span class="down"><i class="ri-arrow-down-line"></i>24%</span>
-										</h5>
-									</div>
-									<div class="block">
-										<h6>Profit</h6>
-										<h5>$21k
-											<span class="up"><i class="ri-arrow-up-line"></i>24%</span>
-										</h5>
-									</div>
-								</div>
-								<div class="cr-chart-content">
-									<div id="newrevenueChart" class="mb-m-24"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xxl-4 col-xl-6 col-md-12">
-						<div class="cr-card" id="campaigns">
+					<div class="col-md-12">
+						<div class="cr-card" id="dealtbl">
 							<div class="cr-card-header">
-								<h4 class="cr-card-title">Campaigns</h4>
+								<h4 class="cr-card-title">Vendor</h4>
 								<div class="header-tools">
-									<div class="cr-date-range dots">
-										<span></span>
-									</div>
-								</div>
-							</div>
-							<div class="cr-card-content">
-								<div class="cr-chart-content">
-									<div id="newcampaignsChart"></div>
-								</div>
-								<div class="cr-chart-header-2">
-									<div class="block">
-										<h6>Social</h6>
-										<h5><span class="up">94%<i class="ri-arrow-up-line"></i></span>75k</h5>
-									</div>
-									<div class="block">
-										<h6>Referral</h6>
-										<h5><span class="down">96%<i class="ri-arrow-down-line"></i></span>54k</h5>
-									</div>
-									<div class="block">
-										<h6>Organic</h6>
-										<h5><span class="up">72%<i class="ri-arrow-up-line"></i></span>2.5k</h5>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xxl-6 col-xl-12">
-						<div class="cr-card" id="best_seller_tbl">
-							<div class="cr-card-header">
-								<h4 class="cr-card-title">Best Seller</h4>
-								<div class="header-tools">
-									<a href="javascript:void(0)" class="m-r-10 cr-full-card" title="Full Screen"><i
+									<a href="javascript:void(0)" class="m-r-10 cr-full-card"><i
 											class="ri-fullscreen-line"></i></a>
 									<div class="cr-date-range dots">
 										<span></span>
@@ -691,324 +575,309 @@
 								</div>
 							</div>
 							<div class="cr-card-content card-default">
-								<div class="best-seller-table">
-									<div class="table-responsive">
-										<table id="best_seller_data_table" class="table">
-											<thead>
-												<tr>
-													<th>Vendor</th>
-													<th>Category</th>
-													<th>Stock</th>
-													<th>Sales</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td><img class="cat-thumb" src="assets/img/clients/1.jpg"
-															alt="clients Image"><span class="name">DS Fashion</span>
-													</td>
-													<td>
-														<span class="cat">
-															<a href="product-list.html">Watches</a>
-															<a href="product-list.html">Clothes</a>
-															<a href="product-list.html">Phones</a>
-														</span>
-													</td>
-													<td>685</td>
-													<td>$1254</td>
-												</tr>
-												<tr>
-													<td><img class="cat-thumb" src="assets/img/clients/2.jpg"
-															alt="clients Image"><span class="name">Loka Creation</span>
-													</td>
-													<td>
-														<span class="cat">
-															<a href="product-list.html">Phone</a>
-															<a href="product-list.html">Camera</a>
-															<a href="product-list.html">Clothes</a>
-															<a href="product-list.html">Phones</a>
-														</span>
-													</td>
-													<td>874</td>
-													<td>$1768</td>
-												</tr>
-												<tr>
-													<td><img class="cat-thumb" src="assets/img/clients/3.jpg"
-															alt="clients Image"><span class="name">Vorna Arts</span>
-													</td>
-													<td>
-														<span class="cat">
-															<a href="product-list.html">Laptop</a>
-															<a href="product-list.html">Furniture</a>
-															<a href="product-list.html">Phones</a>
-														</span>
-													</td>
-													<td>95</td>
-													<td>$2296</td>
-												</tr>
-												<tr>
-													<td><img class="cat-thumb" src="assets/img/clients/4.jpg"
-															alt="clients Image"><span class="name">Lestie Shop</span>
-													</td>
-													<td>
-														<span class="cat">
-															<a href="product-list.html">Clothes</a>
-															<a href="product-list.html">Phones</a>
-														</span>
-													</td>
-													<td>354</td>
-													<td>$2754</td>
-												</tr>
-												<tr>
-													<td><img class="cat-thumb" src="assets/img/clients/5.jpg"
-															alt="clients Image"><span class="name">Moris Gallery</span>
-													</td>
-													<td>
-														<span class="cat">
-															<a href="product-list.html">Tools</a>
-															<a href="product-list.html">Clothes</a>
-															<a href="product-list.html">Bags</a>
-														</span>
-													</td>
-													<td>675</td>
-													<td>$3105</td>
-												</tr>
-												<tr>
-													<td><img class="cat-thumb" src="assets/img/clients/6.jpg"
-															alt="clients Image"><span class="name">Jens Fashion.</span>
-													</td>
-													<td>
-														<span class="cat">
-															<a href="product-list.html">Shoes</a>
-															<a href="product-list.html">Clothes</a>
-															<a href="product-list.html">Jewellery</a>
-														</span>
-													</td>
-													<td>854</td>
-													<td>$3854</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xxl-6 col-xl-12">
-						<div class="cr-card" id="top_product_tbl">
-							<div class="cr-card-header">
-								<h4 class="cr-card-title">Top Product</h4>
-								<div class="header-tools">
-									<a href="javascript:void(0)" class="m-r-10 cr-full-card" title="Full Screen"><i
-											class="ri-fullscreen-line"></i></a>
-									<div class="cr-date-range dots">
-										<span></span>
-									</div>
-								</div>
-							</div>
-							<div class="cr-card-content card-default">
-								<div class="top-product-table">
-									<div class="table-responsive">
-										<table id="top_product_data_table" class="table">
-											<thead>
-												<tr>
-													<th>Product</th>
-													<th>Price</th>
-													<th>Orders</th>
-													<th>Stock</th>
-													<th>Total</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td><img class="cat-thumb" src="assets/img/product/1.jpg"
-															alt="clients Image"><span class="name">Mens t-shirt</span>
-													</td>
-													<td>$16</td>
-													<td>162</td>
-													<td>456</td>
-													<td>$3524</td>
-												</tr>
-												<tr>
-													<td><img class="cat-thumb" src="assets/img/product/2.jpg"
-															alt="clients Image"><span class="name">Sofa chair</span>
-													</td>
-													<td>$52</td>
-													<td>178</td>
-													<td>958</td>
-													<td>$8654</td>
-												</tr>
-												<tr>
-													<td><img class="cat-thumb" src="assets/img/product/3.jpg"
-															alt="clients Image"><span class="name">Night Lamp</span>
-													</td>
-													<td>$70</td>
-													<td>198</td>
-													<td>1524</td>
-													<td>$1152</td>
-												</tr>
-												<tr>
-													<td><img class="cat-thumb" src="assets/img/product/4.jpg"
-															alt="clients Image"><span class="name">Mens hoodie</span>
-													</td>
-													<td>$16</td>
-													<td>205</td>
-													<td>253</td>
-													<td>$5645</td>
-												</tr>
-												<tr>
-													<td><img class="cat-thumb" src="assets/img/product/5.jpg"
-															alt="clients Image"><span class="name">Digital Watch</span>
-													</td>
-													<td>$559</td>
-													<td>209</td>
-													<td>456</td>
-													<td>$20546</td>
-												</tr>
-												<tr>
-													<td><img class="cat-thumb" src="assets/img/product/6.jpg"
-															alt="clients Image"><span class="name">DSLR Camera.</span>
-													</td>
-													<td>$1546</td>
-													<td>212</td>
-													<td>98</td>
-													<td>$33500</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xxl-8 col-xl-12">
-						<div class="cr-card" id="ordertbl">
-							<div class="cr-card-header">
-								<h4 class="cr-card-title">Recent Orders</h4>
-								<div class="header-tools">
-									<a href="javascript:void(0)" class="m-r-10 cr-full-card" title="Full Screen"><i
-											class="ri-fullscreen-line"></i></a>
-									<div class="cr-date-range dots">
-										<span></span>
-									</div>
-								</div>
-							</div>
-							<div class="cr-card-content card-default">
-								<div class="order-table">
-									<div class="table-responsive">
-										<table id="recent_order_data_table" class="table">
+								<div class="deal-table">
+									<div class="table-responsive tbl-1200">
+										<table id="vendor-list" class="table">
 											<thead>
 												<tr>
 													<th>ID</th>
+													<th>Company</th>
 													<th>Product</th>
-													<th>Customer</th>
-													<th>Amount</th>
+													<th>Stock</th>
+													<th>Since</th>
+													<th>Name</th>
 													<th>Status</th>
-													<th>vendor</th>
+													<th>Action</th>
 												</tr>
 											</thead>
 											<tbody>
 												<tr>
-													<td class="token">#fx2650</td>
-													<td><img class="cat-thumb" src="assets/img/product/1.jpg"
-															alt="clients Image"><span class="name">Mens t-shirt</span>
+													<td class="token">2650</td>
+													<td><img class="cat-thumb" src="assets/img/clients/1.jpg"
+															alt="clients Image"><span class="name">Jemst tech.</span>
 													</td>
-													<td>Avira Venusio</td>
-													<td>$15</td>
-													<td class="cod">COD</td>
-													<td>Melborn Fashion</td>
-												</tr>
-												<tr>
-													<td class="token">#fx2650</td>
-													<td><img class="cat-thumb" src="assets/img/product/2.jpg"
-															alt="clients Image"><span class="name">Sofa chair</span>
-													</td>
+													<td>652</td>
+													<td>2654</td>
+													<td>15/01/2023</td>
 													<td>Zara nails</td>
-													<td>$52</td>
+													<td class="active">ACTIVE</td>
+													<td>
+														<div class="d-flex justify-content-center">
+															<button type="button"
+																class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+																data-bs-toggle="dropdown" aria-haspopup="true"
+																aria-expanded="false" data-display="static">
+																<span class="sr-only"><i
+																		class="ri-settings-3-line"></i></span>
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="#">Edit</a>
+																<a class="dropdown-item" href="#">Delete</a>
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="token">2650</td>
+													<td><img class="cat-thumb" src="assets/img/clients/5.jpg"
+															alt="clients Image"><span class="name">Monsy Pvt.</span>
+													</td>
+													<td>578</td>
+													<td>1520</td>
+													<td>15/01/2023</td>
+													<td>Mari macro</td>
+													<td class="active">ACTIVE</td>
+													<td>
+														<div class="d-flex justify-content-center">
+															<button type="button"
+																class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+																data-bs-toggle="dropdown" aria-haspopup="true"
+																aria-expanded="false" data-display="static">
+																<span class="sr-only"><i
+																		class="ri-settings-3-line"></i></span>
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="#">Edit</a>
+																<a class="dropdown-item" href="#">Delete</a>
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="token">2650</td>
+													<td><img class="cat-thumb" src="assets/img/clients/2.jpg"
+															alt="clients Image"><span class="name">Capital Mines
+															Pvt.</span>
+													</td>
+													<td>23</td>
+													<td>250</td>
+													<td>15/01/2023</td>
+													<td>Zara nails</td>
 													<td class="pending">Pending</td>
-													<td>Capital Mines</td>
+													<td>
+														<div class="d-flex justify-content-center">
+															<button type="button"
+																class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+																data-bs-toggle="dropdown" aria-haspopup="true"
+																aria-expanded="false" data-display="static">
+																<span class="sr-only"><i
+																		class="ri-settings-3-line"></i></span>
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="#">Edit</a>
+																<a class="dropdown-item" href="#">Delete</a>
+															</div>
+														</div>
+													</td>
 												</tr>
 												<tr>
-													<td class="token">#fx2365</td>
-													<td><img class="cat-thumb" src="assets/img/product/3.jpg"
-															alt="clients Image"><span class="name">Night Lamp</span>
+													<td class="token">2365</td>
+													<td><img class="cat-thumb" src="assets/img/clients/3.jpg"
+															alt="clients Image"><span class="name">Myras
+															infitech.</span>
 													</td>
+													<td>359</td>
+													<td>6548</td>
+													<td>02/08/2022</td>
 													<td>Olive Yew</td>
-													<td>$69</td>
-													<td class="wallet">wallet</td>
-													<td>Bara Electrics</td>
+													<td class="active">ACTIVE</td>
+													<td>
+														<div class="d-flex justify-content-center">
+															<button type="button"
+																class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+																data-bs-toggle="dropdown" aria-haspopup="true"
+																aria-expanded="false" data-display="static">
+																<span class="sr-only"><i
+																		class="ri-settings-3-line"></i></span>
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="#">Edit</a>
+																<a class="dropdown-item" href="#">Delete</a>
+															</div>
+														</div>
+													</td>
 												</tr>
 												<tr>
-													<td class="token">#fx2205</td>
-													<td><img class="cat-thumb" src="assets/img/product/4.jpg"
-															alt="clients Image"><span class="name">Mens hoodie</span>
-													</td>
+													<td class="token">2205</td>
+													<td><img class="cat-thumb" src="assets/img/clients/4.jpg"
+															alt="clients Image"><span class="name">Gujarat agro
+															LLP.</span></td>
+													<td>254</td>
+													<td>3654</td>
+													<td>23/02/2023</td>
 													<td>Allie Grater</td>
-													<td>$49</td>
-													<td class="paid">Paid</td>
-													<td>Forest clothes</td>
+													<td class="active">ACTIVE</td>
+													<td>
+														<div class="d-flex justify-content-center">
+															<button type="button"
+																class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+																data-bs-toggle="dropdown" aria-haspopup="true"
+																aria-expanded="false" data-display="static">
+																<span class="sr-only"><i
+																		class="ri-settings-3-line"></i></span>
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="#">Edit</a>
+																<a class="dropdown-item" href="#">Delete</a>
+															</div>
+														</div>
+													</td>
 												</tr>
 												<tr>
-													<td class="token">#fx2187</td>
-													<td><img class="cat-thumb" src="assets/img/product/5.jpg"
-															alt="clients Image"><span class="name">Digital Watch</span>
+													<td class="token">2187</td>
+													<td><img class="cat-thumb" src="assets/img/clients/5.jpg"
+															alt="clients Image"><span class="name">KK Food LLC.</span>
 													</td>
+													<td>652</td>
+													<td>6587</td>
+													<td>17/01/2022</td>
 													<td>Stanley Knife</td>
-													<td>$559</td>
-													<td class="cod">COD</td>
-													<td>Samsung Digi</td>
-												</tr>
-												<tr>
-													<td class="token">#fx2050</td>
-													<td><img class="cat-thumb" src="assets/img/product/6.jpg"
-															alt="clients Image"><span class="name">DSLR Camera.</span>
-													</td>
-													<td>Nick Carlet</td>
-													<td>$1546</td>
-													<td class="wallet">Wallet</td>
-													<td>Canion tech</td>
-												</tr>
-												<tr>
-													<td class="token">#fx1995</td>
-													<td><img class="cat-thumb" src="assets/img/product/7.jpg"
-															alt="clients Image"><span class="name">Head phone</span>
-													</td>
-													<td>Moris Nency</td>
-													<td>$525</td>
-													<td class="paid">Paid</td>
-													<td>Beater Digital</td>
-												</tr>
-												<tr>
-													<td class="token">#fx1985</td>
-													<td><img class="cat-thumb" src="assets/img/product/8.jpg"
-															alt="clients Image"><span class="name">Camera Dron</span>
-													</td>
-													<td>Wiley Waites</td>
-													<td>$1255</td>
-													<td class="paid">Paid</td>
-													<td>Four wing</td>
-												</tr>
-												<tr>
-													<td class="token">#fx1945</td>
-													<td><img class="cat-thumb" src="assets/img/product/9.jpg"
-															alt="clients Image"><span class="name">Drill machine</span>
-													</td>
-													<td>Sarah Moanees</td>
-													<td>$684</td>
 													<td class="pending">pending</td>
-													<td>Hitachu</td>
+													<td>
+														<div class="d-flex justify-content-center">
+															<button type="button"
+																class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+																data-bs-toggle="dropdown" aria-haspopup="true"
+																aria-expanded="false" data-display="static">
+																<span class="sr-only"><i
+																		class="ri-settings-3-line"></i></span>
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="#">Edit</a>
+																<a class="dropdown-item" href="#">Delete</a>
+															</div>
+														</div>
+													</td>
 												</tr>
 												<tr>
-													<td class="token">#fx1865</td>
-													<td><img class="cat-thumb" src="assets/img/product/10.jpg"
-															alt="clients Image"><span class="name">Camera Dron</span>
+													<td class="token">2050</td>
+													<td><img class="cat-thumb" src="assets/img/clients/6.jpg"
+															alt="clients Image"><span class="name">Maruti agro.</span>
 													</td>
+													<td>65</td>
+													<td>8547</td>
+													<td>09/09/2022</td>
+													<td>Zara nails</td>
+													<td class="active">ACTIVE</td>
+													<td>
+														<div class="d-flex justify-content-center">
+															<button type="button"
+																class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+																data-bs-toggle="dropdown" aria-haspopup="true"
+																aria-expanded="false" data-display="static">
+																<span class="sr-only"><i
+																		class="ri-settings-3-line"></i></span>
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="#">Edit</a>
+																<a class="dropdown-item" href="#">Delete</a>
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="token">1995</td>
+													<td><img class="cat-thumb" src="assets/img/clients/7.jpg"
+															alt="clients Image"><span class="name">Monsy pvt.</span>
+													</td>
+													<td>120</td>
+													<td>50</td>
+													<td>11/08/2022</td>
+													<td>Ivan Itchinos</td>
+													<td class="active">ACTIVE</td>
+													<td>
+														<div class="d-flex justify-content-center">
+															<button type="button"
+																class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+																data-bs-toggle="dropdown" aria-haspopup="true"
+																aria-expanded="false" data-display="static">
+																<span class="sr-only"><i
+																		class="ri-settings-3-line"></i></span>
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="#">Edit</a>
+																<a class="dropdown-item" href="#">Delete</a>
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="token">1985</td>
+													<td><img class="cat-thumb" src="assets/img/clients/8.jpg"
+															alt="clients Image"><span class="name">Trinity info.</span>
+													</td>
+													<td>987</td>
+													<td>5468</td>
+													<td>19/12/2021</td>
+													<td>Wiley Waites</td>
+													<td class="pending">pending</td>
+													<td>
+														<div class="d-flex justify-content-center">
+															<button type="button"
+																class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+																data-bs-toggle="dropdown" aria-haspopup="true"
+																aria-expanded="false" data-display="static">
+																<span class="sr-only"><i
+																		class="ri-settings-3-line"></i></span>
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="#">Edit</a>
+																<a class="dropdown-item" href="#">Delete</a>
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="token">1945</td>
+													<td><img class="cat-thumb" src="assets/img/clients/9.jpg"
+															alt="clients Image"><span class="name">Miletone Gems.</span>
+													</td>
+													<td>2</td>
+													<td>20</td>
+													<td>06/05/2021</td>
+													<td>Sarah Moanees</td>
+													<td class="active">ACTIVE</td>
+													<td>
+														<div class="d-flex justify-content-center">
+															<button type="button"
+																class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+																data-bs-toggle="dropdown" aria-haspopup="true"
+																aria-expanded="false" data-display="static">
+																<span class="sr-only"><i
+																		class="ri-settings-3-line"></i></span>
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="#">Edit</a>
+																<a class="dropdown-item" href="#">Delete</a>
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="token">1865</td>
+													<td><img class="cat-thumb" src="assets/img/clients/10.jpg"
+															alt="clients Image"><span class="name">Lightbeam Pvt.</span>
+													</td>
+													<td>258</td>
+													<td>865</td>
+													<td>01/01/2021</td>
 													<td>Anne Ortha</td>
-													<td>$854</td>
-													<td class="cod">COD</td>
-													<td>Skyrider tech</td>
+													<td class="active">ACTIVE</td>
+													<td>
+														<div class="d-flex justify-content-center">
+															<button type="button"
+																class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+																data-bs-toggle="dropdown" aria-haspopup="true"
+																aria-expanded="false" data-display="static">
+																<span class="sr-only"><i
+																		class="ri-settings-3-line"></i></span>
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="#">Edit</a>
+																<a class="dropdown-item" href="#">Delete</a>
+															</div>
+														</div>
+													</td>
 												</tr>
 											</tbody>
 										</table>
@@ -1030,6 +899,91 @@
 				</div>
 			</div>
 		</footer>
+
+		<!-- Feature tools -->
+		<div class="cr-tools-sidebar-overlay"></div>
+		<div class="cr-tools-sidebar">
+			<a href="javascript:void(0)" class="cr-tools-sidebar-toggle in-out">
+				<i class="ri-settings-4-line"></i>
+			</a>
+			<div class="cr-bar-title">
+				<h6>Tools</h6>
+				<a href="javascript:void(0)" class="close-tools"><i class="ri-close-line"></i></a>
+			</div>
+			<div class="cr-tools-detail">
+				<div class="cr-tools-block">
+					<h3>Sidebar</h3>
+					<div class="cr-tools-info">
+						<div class="cr-tools-item sidebar active" data-sidebar-mode-tool="light">
+							<img src="assets/img/tools/side-light.png" alt="light">
+							<p>light</p>
+						</div>
+						<div class="cr-tools-item sidebar" data-sidebar-mode-tool="dark">
+							<img src="assets/img/tools/side-dark.png" alt="dark">
+							<p>dark</p>
+						</div>
+						<div class="cr-tools-item sidebar" data-sidebar-mode-tool="bg-1">
+							<img src="assets/img/tools/side-bg-1.png" alt="background">
+							<p>Bg-1</p>
+						</div>
+						<div class="cr-tools-item sidebar" data-sidebar-mode-tool="bg-2">
+							<img src="assets/img/tools/side-bg-2.png" alt="background">
+							<p>Bg-2</p>
+						</div>
+						<div class="cr-tools-item sidebar" data-sidebar-mode-tool="bg-3">
+							<img src="assets/img/tools/side-bg-3.png" alt="background">
+							<p>Bg-3</p>
+						</div>
+						<div class="cr-tools-item sidebar" data-sidebar-mode-tool="bg-4">
+							<img src="assets/img/tools/side-bg-4.png" alt="background">
+							<p>Bg-4</p>
+						</div>
+					</div>
+				</div>
+				<div class="cr-tools-block">
+					<h3>Header</h3>
+					<div class="cr-tools-info">
+						<div class="cr-tools-item header active" data-header-mode="light">
+							<img src="assets/img/tools/header-light.png" alt="light">
+							<p>light</p>
+						</div>
+						<div class="cr-tools-item header" data-header-mode="dark">
+							<img src="assets/img/tools/header-dark.png" alt="dark">
+							<p>dark</p>
+						</div>
+					</div>
+				</div>
+				<div class="cr-tools-block">
+					<h3>Backgrounds</h3>
+					<div class="cr-tools-info">
+						<div class="cr-tools-item bg active" data-bg-mode="default">
+							<img src="assets/img/tools/bg-0.png" alt="default">
+							<p>Default</p>
+						</div>
+						<div class="cr-tools-item bg" data-bg-mode="bg-1">
+							<img src="assets/img/tools/bg-1.png" alt="bg-1">
+							<p>Bg-1</p>
+						</div>
+						<div class="cr-tools-item bg" data-bg-mode="bg-2">
+							<img src="assets/img/tools/bg-2.png" alt="bg-2">
+							<p>Bg-2</p>
+						</div>
+						<div class="cr-tools-item bg" data-bg-mode="bg-3">
+							<img src="assets/img/tools/bg-3.png" alt="bg-3">
+							<p>Bg-3</p>
+						</div>
+						<div class="cr-tools-item bg" data-bg-mode="bg-4">
+							<img src="assets/img/tools/bg-4.png" alt="bg-4">
+							<p>Bg-4</p>
+						</div>
+						<div class="cr-tools-item bg" data-bg-mode="bg-5">
+							<img src="assets/img/tools/bg-5.png" alt="bg-5">
+							<p>Bg-5</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
 
 	<!-- Vendor Custom -->
@@ -1039,7 +993,6 @@
 	<script src="assets/js/vendor/apexcharts.min.js"></script>
 	<script src="assets/js/vendor/jquery-jvectormap-1.2.2.min.js"></script>
 	<script src="assets/js/vendor/jquery-jvectormap-world-mill-en.js"></script>
-	<script src="assets/js/vendor/owl.carousel.min.js"></script>
 	<!-- Data Tables -->
 	<script src='assets/js/vendor/jquery.datatables.min.js'></script>
 	<script src='assets/js/vendor/datatables.bootstrap5.min.js'></script>
@@ -1053,7 +1006,6 @@
 
 	<!-- Main Custom -->
 	<script src="assets/js/main.js"></script>
-	<script src="assets/js/data/ecommerce-chart-data.js"></script>
 </body>
 
 </html>
