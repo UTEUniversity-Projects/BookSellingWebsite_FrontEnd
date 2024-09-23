@@ -361,44 +361,6 @@
                 document.webkitExitFullscreen();
             }
         });
-        var $addLink = $('<link>', {
-            rel: 'stylesheet',
-            href: 'assets/css/dark.css',
-            id: 'dark'
-        });
-
-        $(".cr-mode.dark").on("click", function () {
-            $(this).css("display", "none");
-            $(".cr-mode.light").css("display", "flex");
-            $(".cr-sidebar").attr("data-mode", "dark");
-            $("body").attr("data-cr-mode", "dark");
-            $("link[href='assets/css/style.css']").after($addLink);
-            var headerModes = $(".cr-tools-item.header").attr("data-header-mode");
-            if (headerModes == "light") {
-                $(".cr-tools-item.header[data-header-mode='dark']").addClass("active");
-                $(".cr-tools-item.header[data-header-mode='light']").removeClass("active");
-                $(".cr-header").attr("data-header-mode-tool", "dark");
-            }
-            $(".cr-tools-item.mode[data-cr-mode-tool='light']").removeClass("active");
-            $(".cr-tools-item.mode[data-cr-mode-tool='dark']").addClass("active");
-        });
-        $(".cr-mode.light").on("click", function () {
-            $(this).css("display", "none");
-            $(".cr-mode.dark").css("display", "flex");
-            $(".cr-header").attr("data-header-mode-tool", "light");
-            $(".cr-sidebar").attr("data-mode", "light");
-
-            $("body").attr("data-cr-mode", "light");
-            $("#dark").remove();
-            var headerModes = $(".cr-tools-item.header").attr("data-header-mode");
-            if (headerModes == "light") {
-                $(".cr-tools-item.header[data-header-mode='light']").addClass("active");
-                $(".cr-tools-item.header[data-header-mode='dark']").removeClass("active");
-                $(".cr-header").attr("data-header-mode-tool", "light");
-            }
-            $(".cr-tools-item.mode[data-cr-mode-tool='dark']").removeClass("active");
-            $(".cr-tools-item.mode[data-cr-mode-tool='light']").addClass("active");
-        });
 
         $(".cr-notify").on("click", function () {
             $(".cr-notify-bar").addClass("cr-notify-bar-open");
