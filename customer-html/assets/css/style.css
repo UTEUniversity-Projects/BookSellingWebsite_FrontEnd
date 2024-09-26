@@ -2293,6 +2293,7 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
   right: -230px;
   z-index: 20;
   color: #000;
+  overflow-y: scroll;
 }
 .cr-tool .cr-tool-btn {
   display: flex;
@@ -7764,7 +7765,6 @@ iframe {
   position: relative;
   display: block;
   color: #2b2b2d;
-  font-family: "Montserrat";
   line-height: 1;
 }
 .cr-checkout-wrap .cr-check-login h3 {
@@ -7852,7 +7852,7 @@ iframe {
   line-height: 24px;
   color: #7a7a7a;
   letter-spacing: 0;
-  max-width: 64%;
+  max-width: 66%;
 }
 
 .cr-new-btn {
