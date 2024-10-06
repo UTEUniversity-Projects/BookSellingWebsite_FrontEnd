@@ -1,4 +1,8 @@
 /* Products-page */
+.section-related-products {
+    padding: 0 0 70px;
+}
+
 .cr-product-card {
     height: 100%;
     padding: 12px;
@@ -403,6 +407,10 @@
             margin-left: 15px;
         }
 
+        .cr-buy-button {
+            margin-left: 15px;
+        }
+
         .cr-card-icon {
             margin-left: 15px;
             display: flex;
@@ -796,7 +804,7 @@
         }
     }
 
-    .cr-add-button {
+    .cr-add-button, .cr-buy-button {
         .cr-button {
             padding: 8px 15px;
         }
@@ -935,6 +943,9 @@
 
 @media only screen and (max-width: 380px) {
     .cr-add-button {
+        display: none;
+    }
+    .cr-buy-button {
         display: none;
     }
     .cr-size-and-weight {
