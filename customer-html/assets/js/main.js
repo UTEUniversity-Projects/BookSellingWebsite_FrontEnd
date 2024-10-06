@@ -315,10 +315,10 @@
         var isWishlist = $(this).hasClass("active");
         if (isWishlist) {
             $(this).removeClass("active");
-            $('footer').after('<div class="cr-wish-notify"><p class="wish-note">Remove product on <a href="wishlist.html"> Wishlist</a> Successfully!</p></div>');
+            $('footer').after('<div class="cr-wish-notify"><p class="wish-note">Xóa sản phẩm khỏi <a href="wishlist.html"> Yêu thích</a> thành công!</p></div>');
         } else {
             $(this).addClass("active");
-            $('footer').after('<div class="cr-wish-notify"><p class="wish-note">Add product in <a href="wishlist.html"> Wishlist</a> Successfully!</p></div>');
+            $('footer').after('<div class="cr-wish-notify"><p class="wish-note">Thêm sản phẩm vào <a href="wishlist.html"> Yêu thích</a> thành công!</p></div>');
         }
 
         setTimeout(function () {
