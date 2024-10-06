@@ -1,6 +1,6 @@
 /* Products-page */
 .section-related-products {
-    padding: 0 0 70px;
+  padding: 0 0 70px;
 }
 
 .cr-product-card {
@@ -406,14 +406,13 @@
       margin-left: 15px;
     }
 
+    .cr-buy-button {
+      margin-left: 15px;
+    }
 
-        .cr-buy-button {
-            margin-left: 15px;
-        }
-
-        .cr-card-icon {
-            margin-left: 15px;
-            display: flex;
+    .cr-card-icon {
+      margin-left: 15px;
+      display: flex;
 
       a {
         margin: 0;
@@ -529,7 +528,7 @@
           height: 2px;
           width: 0;
           margin: 0 auto;
-          content: "";
+          content: '';
           position: absolute;
           top: auto;
           bottom: 0;
@@ -554,7 +553,7 @@
           height: 2px;
           width: 100%;
           margin: 0 auto;
-          content: "";
+          content: '';
           position: absolute;
           top: auto;
           bottom: 0;
@@ -686,7 +685,7 @@
       outline: none;
     }
   }
-  
+
   .review-list {
     display: flex;
     flex-direction: column;
@@ -807,12 +806,10 @@
     }
   }
 
-
-    .cr-add-button, .cr-buy-button {
-        .cr-button {
-            padding: 8px 15px;
-        }
-
+  .cr-add-button,
+  .cr-buy-button {
+    .cr-button {
+      padding: 8px 15px;
     }
   }
 }
@@ -958,25 +955,25 @@
     }
 
     .cr-buy-button {
-        display: none;
+      display: none;
     }
     .cr-size-and-weight {
-        .cr-review-star {
-            p {
-                display: none;
-            }
+      .cr-review-star {
+        p {
+          display: none;
         }
+      }
     }
     .cr-size-and-weight {
-        .cr-size-weight {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            .cr-kg {
-                padding: 10px 0 0 0;
-            }
+      .cr-size-weight {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .cr-kg {
+          padding: 10px 0 0 0;
         }
+      }
     }
-
+  }
 }
