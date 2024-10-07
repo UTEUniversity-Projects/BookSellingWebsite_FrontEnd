@@ -34,8 +34,6 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
-
-    
   </head>
 
   <body class="body-bg-6">
@@ -64,7 +62,7 @@
                   type="text"
                   placeholder="Tìm kiếm sản phẩm..."
                 />
-                <a href="javascript:void(0)" class="search-btn">
+                <a href="search.html" class="search-btn">
                   <i class="ri-search-line"></i>
                 </a>
               </form>
@@ -93,23 +91,50 @@
                         >
                       </li>
                       <li>
-                        <a
-                          class="dropdown-item" href="order.html"
-                        >
+                        <a class="dropdown-item" href="order.html">
                           <span>Đơn hàng của tôi</span>
                         </a>
                       </li>
                     </ul>
                   </li>
                 </ul>
-                <a href="" class="cr-right-bar-item">
-                  <i class="ri-notification-3-line"></i>
-                  <span>Thông báo</span>
-                </a>
-                <!-- <a href="wishlist.html" class="cr-right-bar-item">
-                  <i class="ri-heart-3-line"></i>
-                  <span>Yêu thích</span>
-                </a> -->
+                <div class="notification">
+                  <a href="notification.html" class="cr-right-bar-item">
+                    <i class="ri-notification-3-line"></i>
+                    <span>Thông báo</span>
+                  </a>
+
+                  <div class="notification-content">
+                    <h3 class="notification-header">Thông báo</h3>
+                    <ul class="notification-body">
+                      <li>
+                        <a href="#">
+                          <div class="d-flex gap-2">
+                            <div style="width: 20%">
+                              <img
+                                src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lwxpv4ydgxjt57.webp"
+                                alt=""
+                              />
+                            </div>
+                            <div>
+                              <h4 style="width: 100%">
+                                Đơn hàng đang giao đến bạn
+                              </h4>
+                              <p class="text-justify">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="notification-view-all">
+                      <a href="notification.html">Xem tất cả</a>
+                    </div>
+                  </div>
+                </div>
+
                 <a
                   href="javascript:void(0)"
                   class="cr-right-bar-item Shopping-toggle"
@@ -2832,6 +2857,7 @@
     <script src="assets/js/vendor/aos.min.js"></script>
     <script src="assets/js/vendor/swiper-bundle.min.js"></script>
     <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/tailwind.min.js"></script>
 
     <!-- Main Custom -->
     <script src="assets/js/main.js"></script>
