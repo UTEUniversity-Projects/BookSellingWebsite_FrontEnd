@@ -555,7 +555,7 @@
             "dom": '<"row justify-content-between top-information"lf>rt<"row justify-content-between bottom-information"ip><"clear">'
         });
     }
-    /*========== Recent order DATA TABLE(add-category.html.html) ===========*/
+    /*========== Recent order DATA TABLE(add-product-category.html.html) ===========*/
     var responsiveDataTable = $("#cat_data_table");
     if (responsiveDataTable.length !== 0) {
         responsiveDataTable.DataTable({
