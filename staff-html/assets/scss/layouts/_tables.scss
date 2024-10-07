@@ -38,7 +38,6 @@ div.table-responsive>div.dataTables_wrapper>div.row {
 }
 
 div.dataTables_wrapper {
-
     div.dataTables_length,
     div.dataTables_filter {
         width: 50%;
@@ -88,6 +87,7 @@ div.dataTables_wrapper {
 table {
     border-collapse: separate;
     border-spacing: 0;
+    width: 100%;
 }
 
 table.dataTable {
