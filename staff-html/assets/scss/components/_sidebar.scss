@@ -317,7 +317,7 @@
 
 			.load-active {
 				>a {
-					// color: $sb-item-color-hover;
+					color: $sb-item-color-hover;
 				}
 			}
 
@@ -342,7 +342,7 @@
 
 				.active-link {
 					color: $sb-item-color-hover;
-					font-weight: 400;
+					font-weight: 500;
 					i {
 						font-weight: 800;
 					}

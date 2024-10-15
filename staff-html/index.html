@@ -21,15 +21,13 @@
     <link href="assets/css/vendor/remixicon.css" rel="stylesheet" />
     <link href="assets/css/vendor/owl.carousel.min.css" rel="stylesheet" />
 
-    <!-- Font awesome -->
-    <!-- <link
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    /> -->
-
+    />
     <!-- Vendor CSS -->
     <link
       href="assets/css/vendor/datatables.bootstrap5.min.css"
@@ -172,7 +170,7 @@
                   <li>
                     <a href="support-customer.html" class="cr-page-link drop">
                       <i class="ri-checkbox-blank-circle-line"></i>
-                      Hỗ trợ khách hàng
+                      Trung tâm hỗ trợ
                     </a>
                   </li>
                   <li class="cr-sb-item sb-subdrop-item">
@@ -739,33 +737,45 @@
           <!-- Page title & breadcrumb -->
           <div class="cr-page-title cr-page-title-2">
             <div class="cr-breadcrumb">
-              <h5>Dánh sách sản phẩm</h5>
               <ul>
                 <li><a href="index.html">Carrot</a></li>
-                <li>Dánh sách sản phẩm</li>
+                <li>Danh sách sản phẩm</li>
               </ul>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12">
-              <div class="cr-card card-default product-list">
-                <div class="cr-card-content">
+              <div class="cr-card product-list" id="ordertbl">
+                <div class="cr-card-header">
+                  <h4 class="cr-card-title">Danh sách sản phẩm</h4>
+                  <div class="header-tools">
+                    <a href="javascript:void(0)" class="m-r-10 cr-full-card">
+                      <i class="ri-fullscreen-line"></i>
+                    </a>
+                    <div class="cr-date-range dots">
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="cr-card-content card-default">
                   <div class="table-responsive">
-                    <table id="product_list" class="table">
+                    <table
+                      id="product_list"
+                      class="table table-hover table-striped responsive-data-table"
+                    >
                       <thead>
                         <tr>
-                          <th width="10%">Sách</th>
+                          <th width="8%">Sách</th>
                           <th width="20%">Tiêu đề</th>
-                          <th width="10%">Giá</th>
+                          <th width="8%">Giá</th>
                           <th width="10%">Số lượng</th>
                           <th width="10%">Giảm giá</th>
                           <th width="10%">Đã bán</th>
                           <th width="10%">Ngày bán</th>
-                          <th width="10%">Trạng thái</th>
-                          <th width="10%">Hành động</th>
+                          <th width="12%">Trạng thái</th>
+                          <th width="12%">Hành động</th>
                         </tr>
                       </thead>
-
                       <tbody>
                         <tr>
                           <td>
@@ -794,7 +804,6 @@
                               >
                                 <span class="sr-only">
                                   <i class="ri-settings-3-line"></i>
-                                  <!-- <i class="fa-solid fa-gear"></i> -->
                                 </span>
                               </button>
                               <div class="dropdown-menu">

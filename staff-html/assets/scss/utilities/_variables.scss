@@ -1,6 +1,6 @@
 // Font Family
-$font-family-title: "Nunito", sans-serif;
-$font-family-text: "Poppins", sans-serif;
+$font-family-title: "Be Vietnam Pro", sans-serif;
+$font-family-text: "Be Vietnam Pro", sans-serif;
 
 //iconfont
 $EcIcons: "EcIcons";
@@ -45,6 +45,13 @@ $color-dark-gray: #32465a;
 $background-color-gray: #243140;
 $background-black-trans: rgba(0, 0, 0, 0.3);
 $border-color: #eee;
-$active-color: #30CB83;
-$pending-color: #F1C40F;
-$disable-color: #E74C3C;
+$active-color: #30cb83;
+
+$all-color: #6c757d;
+$waiting-confirmation-color: #ffc107;
+$packing-color: #17a2b8;
+$shipping-color: #007bff;
+$complete-delivery-color: #28a745;
+$canceled-color: #dc3545;
+$request-refund-color: #fd7e14;
+$refunded-color: #6c757d;
