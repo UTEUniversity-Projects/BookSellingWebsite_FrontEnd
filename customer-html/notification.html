@@ -31,12 +31,13 @@
     <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/vendor/jquery.slick.css" />
     <link rel="stylesheet" href="assets/css/vendor/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/vendor/tailwind.min.css" />
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
-  <body class="body-bg-6">
+  <body class="body-bg-6" style="font-family: 'Poppins', sans-serif">
     <!-- Loader -->
     <div id="cr-overlay">
       <span class="loader"></span>
@@ -67,8 +68,8 @@
                 </a>
               </form>
               <div class="cr-right-bar">
-                <ul class="navbar-nav">
-                  <li class="nav-item dropdown">
+                <ul class="my-0">
+                  <li class="relative account">
                     <a
                       class="nav-link dropdown-toggle cr-right-bar-item"
                       href="javascript:void(0)"
@@ -76,71 +77,96 @@
                       <i class="ri-user-3-line"></i>
                       <span>Tài khoản</span>
                     </a>
-                    <ul class="dropdown-menu" style="width: 200px">
-                      <li>
-                        <a class="dropdown-item" href="register.html"
+                    <ul
+                      class="account-list transition-all duration-300 z-[9] absolute top-[35px] right-[20px] bg-white shadow-[rgba(149,_157,_165,_0.5)_0px_-3px_24px] rounded w-48"
+                    >
+                      <li
+                        class="hover:bg-gray-100 hover:text-black transition-all duration-200"
+                      >
+                        <a class="block px-5 py-2" href="register.html"
                           >Đăng ký</a
                         >
                       </li>
-                      <li>
-                        <a class="dropdown-item" href="login.html">Đăng nhập</a>
+                      <li
+                        class="hover:bg-gray-100 hover:text-black transition-all duration-200"
+                      >
+                        <a class="block px-5 py-2" href="login.html"
+                          >Đăng nhập</a
+                        >
                       </li>
-                      <li>
-                        <a class="dropdown-item" href="user-information.html"
+                      <li
+                        class="hover:bg-gray-100 hover:text-black transition-all duration-200"
+                      >
+                        <a class="block px-5 py-2" href="user-information.html"
                           >Thông tin cá nhân</a
                         >
                       </li>
-                      <li>
-                        <a class="dropdown-item" href="order.html">
+                      <li
+                        class="hover:bg-gray-100 hover:text-black transition-all duration-200"
+                      >
+                        <a class="block px-5 py-2" href="order.html">
                           <span>Đơn hàng của tôi</span>
                         </a>
                       </li>
                     </ul>
                   </li>
                 </ul>
-                <div class='notification'>
+                <div class="notification">
                   <a href="notification.html" class="cr-right-bar-item">
                     <i class="ri-notification-3-line"></i>
-                    <span>Thông báo<span>
+                    <span>Thông báo</span>
                   </a>
 
-                  <div class='notification-content'>
-                    <h3 class='notification-header'>Thông báo</h3>
-                    <ul class='notification-body'>
-                      <li>
-                        <a href='notification.html'>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Laborum dicta ut excepturi facilis iste libero
-                          accusantium officia beatae molestias eaque debitis
-                          doloribus harum animi, tenetur ea corrupti ipsam
-                          ratione quidem?
-                        </a>
-                      </li>
-                      <li>
-                        <a href='notification.html'>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Laborum dicta ut excepturi facilis iste libero
-                          accusantium officia beatae molestias eaque debitis
-                          doloribus harum animi, tenetur ea corrupti ipsam
-                          ratione quidem?
-                        </a>
-                      </li>
-                      <li>
-                        <a href='notification.html'>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Laborum dicta ut excepturi facilis iste libero
-                          accusantium officia beatae molestias eaque debitis
-                          doloribus harum animi, tenetur ea corrupti ipsam
-                          ratione quidem?
+                  <div class="notification-content transition-all duration-300">
+                    <div class="text-right px-4 py-2">
+                      <h3 class="notification-header text-gray-500">
+                        Thông báo mới nhận
+                      </h3>
+                    </div>
+                    <ul class="notification-body">
+                      <li class="px-4 py-2">
+                        <a href="#">
+                          <div class="flex gap-2 items-center">
+                            <div class="h-20 basis-1/5 aspect-square">
+                              <img
+                                class="w-full h-full aspect-square"
+                                src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lwxpv4ydgxjt57.webp"
+                                alt=""
+                              />
+                            </div>
+                            <div class="flex-1">
+                              <h4 class="w-full mb-2">
+                                Đơn hàng đang giao đến bạn
+                              </h4>
+                              <p
+                                class="text-left leading-normal"
+                                style="
+                                  display: -webkit-box;
+                                  -webkit-line-clamp: 3;
+                                  -webkit-box-orient: vertical;
+                                  text-overflow: ellipsis;
+                                  word-break: break-word;
+                                  overflow: hidden;
+                                "
+                              >
+                                [PWS 2024: Korea Phase 2] BXH Chung Kết sau
+                                06/18 trận: Nhà vô địch Phase 1 🇰🇷 KWANGDONG
+                                FREECS thể hiện phong độ cao, 🇰🇷 T1 & 🇰🇷 DANAWA
+                                đứng trước nguy cơ ngồi nhà xem PGS 5 & 6.
+                              </p>
+                            </div>
+                          </div>
                         </a>
                       </li>
                     </ul>
-                    <div class='notification-view-all'>
-                      <a href='notification.html'>Xem tất cả</a>
-                    </div>
+                    <a
+                      class="notification-view-all inline-block py-2"
+                      href="notification-list.html"
+                      >Xem tất cả</a
+                    >
                   </div>
                 </div>
-                
+
                 <a
                   href="javascript:void(0)"
                   class="cr-right-bar-item Shopping-toggle"
@@ -196,12 +222,12 @@
                   <i class="ri-shopping-cart-line"></i>
                 </a>
               </div>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                   <li class="nav-item">
                     <a class="nav-link" href="index.html"> Trang chủ </a>
                   </li>
-                  <li class="nav-item dropdown">
+                  <li class="nav-item dropdown" role="presentation">
                     <a
                       class="nav-link dropdown-toggle"
                       href="javascript:void(0)"
@@ -268,7 +294,13 @@
                           >
                             Juice &amp; Drinks
                           </button>
-                          <a class="nav-link" href="shop-left-sidebar.html">
+                          <a
+                            class="nav-link"
+                            href="shop-left-sidebar.html"
+                            aria-selected="false"
+                            tabindex="-1"
+                            role="tab"
+                          >
                             View All
                           </a>
                         </div>
@@ -654,7 +686,7 @@
                       </li>
                     </ul>
                   </li>
-                  <!-- <li class="nav-item dropdown">
+                  <li class="nav-item dropdown">
                     <a
                       class="nav-link dropdown-toggle"
                       href="javascript:void(0)"
@@ -678,7 +710,7 @@
                         >
                       </li>
                     </ul>
-                  </li> -->
+                  </li>
                 </ul>
               </div>
             </nav>
@@ -802,53 +834,30 @@
       </div>
     </div>
 
-    <div class="container">
-        <div class='notification-list'>
-            <div class='notification-item'>
-                <div class='notification-image'>
-                    <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lwxpv4ydgxjt57.webp" alt="">
-                </div>
-                <div class='notification-info'>
-                    <h4>Giao kiện hàng thành công</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quis perferendis! Necessitatibus deserunt veniam eos. Asperiores, harum. Est, minus. Dolorum nostrum accusantium ratione quas repudiandae rem error nesciunt repellendus natus?</p>
-                </div>
+    <div class="container-xl mx-auto">
+      <div class="mt-[50px]">
+        <div class="flex items-center justify-between">
+          <div class="w-[200px] h-[200px] flex-shrink-0">
+            <img
+              src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lwxpv4ydgxjt57.webp"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="basis-2/3">
+            <h4 class="text-black font-bold text-xl">
+              Giao kiện hàng thành công
+            </h4>
+            <p class="text-[16px]">
+              Kiện hàng <b>SPXVN04958213837A</b> của đơn hàng
+              <b>240930BP2B4HTA</b> đã giao thành công đến bạn.
+            </p>
+            <p class="">14:04 03-10-2024</p>
+          </div>
 
-                <a href='#'>Xem chi tiết</a>
-            </div>
-            <div class='notification-item'>
-                <div class='notification-image'>
-                    <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lwxpv4ydgxjt57.webp" alt="">
-                </div>
-                <div class='notification-info'>
-                    <h4>Giao kiện hàng thành công</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quis perferendis! Necessitatibus deserunt veniam eos. Asperiores, harum. Est, minus. Dolorum nostrum accusantium ratione quas repudiandae rem error nesciunt repellendus natus?</p>
-                </div>
-
-                <a href='#'>Xem chi tiết</a>
-            </div>
-            <div class='notification-item'>
-                <div class='notification-image'>
-                    <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lwxpv4ydgxjt57.webp" alt="">
-                </div>
-                <div class='notification-info'>
-                    <h4>Giao kiện hàng thành công</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quis perferendis! Necessitatibus deserunt veniam eos. Asperiores, harum. Est, minus. Dolorum nostrum accusantium ratione quas repudiandae rem error nesciunt repellendus natus?</p>
-                </div>
-
-                <a href='#'>Xem chi tiết</a>
-            </div>
-            <div class='notification-item'>
-                <div class='notification-image'>
-                    <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lwxpv4ydgxjt57.webp" alt="">
-                </div>
-                <div class='notification-info'>
-                    <h4>Giao kiện hàng thành công</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quis perferendis! Necessitatibus deserunt veniam eos. Asperiores, harum. Est, minus. Dolorum nostrum accusantium ratione quas repudiandae rem error nesciunt repellendus natus?</p>
-                </div>
-
-                <a href='#'>Xem chi tiết</a>
-            </div>
+          <a href="notication-detail.html" class='px-4 py-2 bg-gray-200'>Xem chi tiết</a>
         </div>
+      </div>
     </div>
 
     <!-- Footer -->
@@ -1272,6 +1281,7 @@
     <script src="assets/js/vendor/aos.min.js"></script>
     <script src="assets/js/vendor/swiper-bundle.min.js"></script>
     <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/tailwind.min.js"></script>
 
     <!-- Main Custom -->
     <script src="assets/js/main.js"></script>
