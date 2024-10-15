@@ -37,16 +37,18 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- <link rel="stylesheet" href="assets/css/vendor/tailwind.min.css" /> -->
   </head>
 
-  <body class="body-bg-6">
+  <body>
     <!-- Loader -->
-    <div id="cr-overlay">
+    <!-- <div id="cr-overlay">
       <span class="loader"></span>
-    </div>
+    </div> -->
 
     <!-- Header -->
-    <header>
+    <header class="overflow-hidden">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -121,187 +123,6 @@
       <div class="cr-fix" id="cr-main-menu-desk">
         <div class="container">
           <div class="cr-menu-list">
-            <!-- <div class="cr-category-icon-block">
-                        <div class="cr-category-menu">
-                            <div class="cr-category-toggle">
-                                <i class="ri-menu-2-line"></i>
-                            </div>
-                        </div>
-                        <div class="cr-cat-dropdown">
-                            <div class="cr-cat-block">
-                                <div class="cr-cat-tab">
-                                    <div class="cr-tab-list nav flex-column nav-pills" id="v-pills-tab" role="tablist"
-                                        aria-orientation="vertical">
-                                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
-                                            data-bs-target="#v-pills-home" type="button" role="tab"
-                                            aria-controls="v-pills-home" aria-selected="true">
-                                            Dairy &amp; Bakery</button>
-                                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
-                                            data-bs-target="#v-pills-profile" type="button" role="tab"
-                                            aria-controls="v-pills-profile" aria-selected="false" tabindex="-1">
-                                            Fruits &amp; Vegetable</button>
-                                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
-                                            data-bs-target="#v-pills-messages" type="button" role="tab"
-                                            aria-controls="v-pills-messages" aria-selected="false" tabindex="-1">
-                                            Snack &amp; Spice</button>
-                                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                            data-bs-target="#v-pills-settings" type="button" role="tab"
-                                            aria-controls="v-pills-settings" aria-selected="false" tabindex="-1">
-                                            Juice &amp; Drinks </button>
-                                        <a class="nav-link" href="shop-left-sidebar.html">
-                                            View All </a>
-                                    </div>
-                                    <div class="tab-content" id="v-pills-tabContent">
-                                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                                            aria-labelledby="v-pills-home-tab">
-                                            <div class="tab-list row">
-                                                <div class="col">
-                                                    <h6 class="cr-col-title">Dairy</h6>
-                                                    <ul class="cat-list">
-                                                        <li><a href="shop-left-sidebar.html">Milk</a></li>
-                                                        <li><a href="shop-left-sidebar.html">Ice cream</a>
-                                                        </li>
-                                                        <li><a href="shop-left-sidebar.html">Cheese</a></li>
-                                                        <li><a href="shop-left-sidebar.html">Frozen
-                                                                custard</a>
-                                                        </li>
-                                                        <li><a href="shop-left-sidebar.html">Frozen
-                                                                yogurt</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col">
-                                                    <h6 class="cr-col-title">Bakery</h6>
-                                                    <ul class="cat-list">
-                                                        <li><a href="shop-left-sidebar.html">Cake and
-                                                                Pastry</a>
-                                                        </li>
-                                                        <li><a href="shop-left-sidebar.html">Rusk Toast</a>
-                                                        </li>
-                                                        <li><a href="shop-left-sidebar.html">Bread &amp;
-                                                                Buns</a>
-                                                        </li>
-                                                        <li><a href="shop-left-sidebar.html">Chocolate
-                                                                Brownie</a>
-                                                        </li>
-                                                        <li><a href="shop-left-sidebar.html">Cream Roll</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                                            aria-labelledby="v-pills-profile-tab">
-                                            <div class="tab-list row">
-                                                <div class="col">
-                                                    <h6 class="cr-col-title">Fruits</h6>
-                                                    <ul class="cat-list">
-                                                        <li><a href="shop-left-sidebar.html">Cauliflower</a>
-                                                        </li>
-                                                        <li><a href="shop-left-sidebar.html">Bell
-                                                                Peppers</a></li>
-                                                        <li><a href="shop-left-sidebar.html">Broccoli</a>
-                                                        </li>
-                                                        <li><a href="shop-left-sidebar.html">Cabbage</a>
-                                                        </li>
-                                                        <li><a href="shop-left-sidebar.html">Tomato</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col">
-                                                    <h6 class="cr-col-title">Vegetable</h6>
-                                                    <ul class="cat-list">
-                                                        <li><a href="shop-left-sidebar.html">Cauliflower</a>
-                                                        </li>
-                                                        <li><a href="shop-left-sidebar.html">Bell
-                                                                Peppers</a></li>
-                                                        <li><a href="shop-left-sidebar.html">Broccoli</a>
-                                                        </li>
-                                                        <li><a href="shop-left-sidebar.html">Cabbage</a>
-                                                        </li>
-                                                        <li><a href="shop-left-sidebar.html">Tomato</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
-                                            aria-labelledby="v-pills-messages-tab">
-                                            <div class="tab-list row">
-                                                <div class="col">
-                                                    <h6 class="cr-col-title">Snacks</h6>
-                                                    <ul class="cat-list">
-                                                        <li><a href="shop-left-sidebar.html">French
-                                                                fries</a></li>
-                                                        <li><a href="shop-left-sidebar.html">potato
-                                                                chips</a></li>
-                                                        <li><a href="shop-left-sidebar.html">Biscuits &amp;
-                                                                Cookies</a></li>
-                                                        <li><a href="shop-left-sidebar.html">Popcorn</a>
-                                                        </li>
-                                                        <li><a href="shop-left-sidebar.html">Rice Cakes</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col">
-                                                    <h6 class="cr-col-title">Spice</h6>
-                                                    <ul class="cat-list">
-                                                        <li><a href="shop-left-sidebar.html">Cinnamon
-                                                                Powder</a>
-                                                        </li>
-                                                        <li><a href="shop-left-sidebar.html">Cumin
-                                                                Powder</a></li>
-                                                        <li><a href="shop-left-sidebar.html">Fenugreek
-                                                                Powder</a>
-                                                        </li>
-                                                        <li><a href="shop-left-sidebar.html">Pepper
-                                                                Powder</a>
-                                                        </li>
-                                                        <li><a href="shop-left-sidebar.html">Long Pepper</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                                            aria-labelledby="v-pills-settings-tab">
-                                            <div class="tab-list row">
-                                                <div class="col">
-                                                    <h6 class="cr-col-title">Juice</h6>
-                                                    <ul class="cat-list">
-                                                        <li><a href="shop-left-sidebar.html">Mango Juice</a>
-                                                        </li>
-                                                        <li><a href="shop-left-sidebar.html">Coconut
-                                                                Water</a>
-                                                        </li>
-                                                        <li><a href="shop-left-sidebar.html">Tetra Pack</a>
-                                                        </li>
-                                                        <li><a href="shop-left-sidebar.html">Apple
-                                                                Juices</a></li>
-                                                        <li><a href="shop-left-sidebar.html">Lychee
-                                                                Juice</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col">
-                                                    <h6 class="cr-col-title">soft drink</h6>
-                                                    <ul class="cat-list">
-                                                        <li><a href="shop-left-sidebar.html">Breizh Cola</a>
-                                                        </li>
-                                                        <li><a href="shop-left-sidebar.html">Green Cola</a>
-                                                        </li>
-                                                        <li><a href="shop-left-sidebar.html">Jolt Cola</a>
-                                                        </li>
-                                                        <li><a href="shop-left-sidebar.html">Mecca Cola</a>
-                                                        </li>
-                                                        <li><a href="shop-left-sidebar.html">Topsia Cola</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
             <nav class="navbar navbar-expand-lg">
               <a href="javascript:void(0)" class="navbar-toggler shadow-none">
                 <i class="ri-menu-3-line"></i>
@@ -844,7 +665,7 @@
     </header>
 
     <!-- Mobile menu -->
-    <div class="cr-sidebar-overlay"></div>
+    <!-- <div class="cr-sidebar-overlay"></div>
     <div id="cr_mobile_menu" class="cr-side-cart cr-mobile-menu">
       <div class="cr-menu-title">
         <span class="menu-title">My Menu</span>
@@ -932,7 +753,7 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Breadcrumb -->
     <section class="section-breadcrumb">
@@ -951,131 +772,500 @@
     </section>
 
     <!-- Track Order section -->
-    <section class="cr-track padding-tb-100">
-      <div class="container">
-        <div class="row d-none">
-          <div class="col-lg-12">
+    <div class="bg-gray-100 py-5">
+      <div class="max-w-[1024px] mx-auto justfy-spacebetween">
+        <ul class="order-nav flex justify-evenly items-center bg-white">
+          <li
+            data-tab="all"
+            class="order_item active cursor-pointer relative text-[#a0a0a0] tracking-[0.5px] transition duration 300 ease-linear hover:text-[#26aa99] text-[16px] py-2 whitespace-nowrap"
+          >
+            Tất cả
+          </li>
+          <li
+            data-tab="confirming"
+            class="order_item cursor-pointer relative text-[#a0a0a0] tracking-[0.5px] transition duration 300 ease-linear hover:text-[#26aa99] text-[16px] py-2 whitespace-nowrap"
+          >
+            Chờ xác nhận
+          </li>
+          <li
+            data-tab="delivering"
+            class="order_item cursor-pointer relative text-[#a0a0a0] tracking-[0.5px] transition duration 300 ease-linear hover:text-[#26aa99] text-[16px] py-2 whitespace-nowrap"
+          >
+            Đang vận chuyển
+          </li>
+          <li
+            data-tab="completed"
+            class="order_item cursor-pointer relative text-[#a0a0a0] tracking-[0.5px] transition duration 300 ease-linear hover:text-[#26aa99] text-[16px] py-2 whitespace-nowrap"
+          >
+            Hoàn tất giao hàng
+          </li>
+          <li
+            data-tab="cancelled"
+            class="order_item cursor-pointer relative text-[#a0a0a0] tracking-[0.5px] transition duration 300 ease-linear hover:text-[#26aa99] text-[16px] py-2 whitespace-nowrap"
+          >
+            Đã hủy
+          </li>
+          <li
+            data-tab="returning"
+            class="order_item cursor-pointer relative text-[#a0a0a0] tracking-[0.5px] transition duration 300 ease-linear hover:text-[#26aa99] text-[16px] py-2 whitespace-nowrap"
+          >
+            Hoàn trả
+          </li>
+        </ul>
+
+        <div class="w-full mt-5">
+          <div
+            data-tab="completed"
+            class="flex flex-wrap mb-5 p-2 bg-white rounded fade-in"
+          >
             <div
-              class="mb-30"
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              data-aos-delay="400"
+              class="flex-1 items-center border-b-[1px] mb-5 border-solid border-[rgba(0,0,0,0.12)] flex ml-[0] my-[0] text-right basis-full justify-end px-4 py-2"
             >
-              <div class="cr-banner">
-                <h2>Popular Products</h2>
+              <a href="order-detail.html" class="items-center inline-flex m-0">
+                <span class="text-[#26aa99] no-underline align-middle">
+                  <svg
+                    enable-background="new 0 0 15 15"
+                    viewBox="0 0 15 15"
+                    x="0"
+                    y="0"
+                    class="text-[#00bfa5] text-[1rem] mt-[0] mr-[4px] mb-px ml-[0] align-middle stroke-[#26aa99] inline-block h-[1em] w-[1em] fill-current relative"
+                  >
+                    <g>
+                      <line
+                        fill="none"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="10"
+                        x1="8.6"
+                        x2="4.2"
+                        y1="9.8"
+                        y2="9.8"
+                      ></line>
+                      <circle
+                        cx="3"
+                        cy="11.2"
+                        fill="none"
+                        r="2"
+                        stroke-miterlimit="10"
+                      ></circle>
+                      <circle
+                        cx="10"
+                        cy="11.2"
+                        fill="none"
+                        r="2"
+                        stroke-miterlimit="10"
+                      ></circle>
+                      <line
+                        fill="none"
+                        stroke-miterlimit="10"
+                        x1="10.5"
+                        x2="14.4"
+                        y1="7.3"
+                        y2="7.3"
+                      ></line>
+                      <polyline
+                        fill="none"
+                        points="1.5 9.8 .5 9.8 .5 1.8 10 1.8 10 9.1"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="10"
+                      ></polyline>
+                      <polyline
+                        fill="none"
+                        points="9.9 3.8 14 3.8 14.5 10.2 11.9 10.2"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="10"
+                      ></polyline>
+                    </g>
+                  </svg>
+                  Giao hàng thành công
+                </span>
+              </a>
+            </div>
+            <div class="flex basis-full items-center gap-x-5">
+              <div class="w-[82px] h-[82px] flex-0">
+                <img
+                  src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-ljhy12voht6q4c.webp"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
               </div>
-              <div class="cr-banner-sub-title">
-                <p>
-                  We delivering happiness and needs, Faster than you can think.
-                </p>
+              <div class="flex-1">
+                <a href="#">
+                  <h4
+                    class="overflow-hidden text-[16px] leading-[22px] mt-[0] mx-[0] mb-[5px] max-h-[48px] text-justify"
+                    style="
+                      display: -webkit-box;
+                      -webkit-line-clamp: 2;
+                      -webkit-box-orient: vertical;
+                      text-overflow: ellipsis;
+                      word-break: break-word;
+                      overflow: hidden;
+                    "
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                    hic cumque officiis odio temporibus qui explicabo, voluptate
+                    nostrum, vero assumenda dolor autem eligendi perferendis
+                    fugit esse consequatur tempore dolore. Voluptate.
+                  </h4>
+                </a>
+                <p class="text-[rgba(0,0,0,.54)]">Phân loại:</p>
+                <p>Số lượng: <span>x3</span></p>
+              </div>
+              <div>
+                <span
+                  class="text-[#000] ml-[0] mr-[4px] my-[0] opacity-[.26] overflow-hidden [text-decoration-line:line-through] overflow-ellipsis"
+                  >₫32.000</span
+                >
+                <span class="text-[18px] fond-medium text-[#26aa99]"
+                  >₫22.950</span
+                >
+              </div>
+            </div>
+            <div class="flex flex-col items-end w-full mt-2">
+              <div>
+                <h3 class="text-[16px] text-black-500 font-medium">
+                  Thành tiền:
+                  <span class="text-xl text-[#26aa99]">₫68.850</span>
+                </h3>
+              </div>
+              <div class="mt-5">
+                <button
+                  class="px-4 py-2 bg-[#26aa99] rounded text-white mr-2 hover:bg-[#158d7d] transition duration-300"
+                >
+                  Đã nhận được hàng
+                </button>
+                <button
+                  class="px-4 py-2 rounded text-black border-1 border-solid border-gray-200 hover:bg-gray-100 transition duration-300"
+                >
+                  Yêu cầu trả/Hoàn tiền
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            data-tab="cancelled"
+            class="flex flex-wrap mb-5 p-2 bg-white rounded fade-in"
+          >
+            <div
+              class="flex-1 items-center border-b-[1px] mb-5 border-solid border-[rgba(0,0,0,0.12)] flex ml-[0] my-[0] text-right basis-full justify-end px-4 py-2"
+            >
+              <a href="order-detail.html" class="items-center inline-flex m-0">
+                <span class="text-[#ee4d2d] no-underline align-middle">
+                  Đã hủy
+                </span>
+              </a>
+            </div>
+            <div class="flex basis-full items-center gap-x-5">
+              <div class="w-[82px] h-[82px] flex-0">
+                <img
+                  src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-ljhy12voht6q4c.webp"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="flex-1">
+                <a href="#">
+                  <h4
+                    class="overflow-hidden text-[16px] leading-[22px] mt-[0] mx-[0] mb-[5px] max-h-[48px] text-justify"
+                    style="
+                      display: -webkit-box;
+                      -webkit-line-clamp: 2;
+                      -webkit-box-orient: vertical;
+                      text-overflow: ellipsis;
+                      word-break: break-word;
+                      overflow: hidden;
+                    "
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                    hic cumque officiis odio temporibus qui explicabo, voluptate
+                    nostrum, vero assumenda dolor autem eligendi perferendis
+                    fugit esse consequatur tempore dolore. Voluptate.
+                  </h4>
+                </a>
+                <p class="text-[rgba(0,0,0,.54)]">Phân loại:</p>
+                <p>Số lượng: <span>x3</span></p>
+              </div>
+              <div>
+                <span
+                  class="text-[#000] ml-[0] mr-[4px] my-[0] opacity-[.26] overflow-hidden [text-decoration-line:line-through] overflow-ellipsis"
+                  >₫32.000</span
+                >
+                <span class="text-[18px] fond-medium text-[#26aa99]"
+                  >₫22.950</span
+                >
+              </div>
+            </div>
+            <div class="flex flex-col items-end w-full mt-2">
+              <div>
+                <h3 class="text-[16px] text-black-500 font-medium">
+                  Thành tiền:
+                  <span class="text-xl text-[#26aa99]">₫68.850</span>
+                </h3>
+              </div>
+              <div class="mt-5">
+                <button
+                  class="px-4 py-2 bg-[#26aa99] rounded text-white mr-2 hover:bg-[#158d7d] transition duration-300"
+                >
+                  Mua lại
+                </button>
+                <button
+                  class="px-4 py-2 rounded text-black border-1 border-solid border-gray-200 hover:bg-gray-100 transition duration-300"
+                >
+                  Liên hệ người bán
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            data-tab="confirming"
+            class="flex flex-wrap mb-5 p-2 bg-white rounded fade-in"
+          >
+            <div
+              class="flex-1 items-center border-b-[1px] mb-5 border-solid border-[rgba(0,0,0,0.12)] flex ml-[0] my-[0] text-right basis-full justify-end px-4 py-2"
+            >
+              <a href="order-detail.html" class="items-center inline-flex m-0">
+                <span class="text-[#ee4d2d] no-underline align-middle">
+                  Chờ xác nhận
+                </span>
+              </a>
+            </div>
+            <div class="flex basis-full items-center gap-x-5">
+              <div class="w-[82px] h-[82px] flex-0">
+                <img
+                  src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-ljhy12voht6q4c.webp"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="flex-1">
+                <a href="#">
+                  <h4
+                    class="overflow-hidden text-[16px] leading-[22px] mt-[0] mx-[0] mb-[5px] max-h-[48px] text-justify"
+                    style="
+                      display: -webkit-box;
+                      -webkit-line-clamp: 2;
+                      -webkit-box-orient: vertical;
+                      text-overflow: ellipsis;
+                      word-break: break-word;
+                      overflow: hidden;
+                    "
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                    hic cumque officiis odio temporibus qui explicabo, voluptate
+                    nostrum, vero assumenda dolor autem eligendi perferendis
+                    fugit esse consequatur tempore dolore. Voluptate.
+                  </h4>
+                </a>
+                <p class="text-[rgba(0,0,0,.54)]">Phân loại:</p>
+                <p>Số lượng: <span>x3</span></p>
+              </div>
+              <div>
+                <span
+                  class="text-[#000] ml-[0] mr-[4px] my-[0] opacity-[.26] overflow-hidden [text-decoration-line:line-through] overflow-ellipsis"
+                  >₫32.000</span
+                >
+                <span class="text-[18px] fond-medium text-[#26aa99]"
+                  >₫22.950</span
+                >
+              </div>
+            </div>
+            <div class="flex flex-col items-end w-full mt-2">
+              <div>
+                <h3 class="text-[16px] text-black-500 font-medium">
+                  Thành tiền:
+                  <span class="text-xl text-[#26aa99]">₫68.850</span>
+                </h3>
+              </div>
+              <div class="mt-5">
+                <button
+                  class="px-4 py-2 bg-[#26aa99] rounded text-white mr-2 hover:bg-[#158d7d] transition duration-300 select-none pointer-events-none opacity-50"
+                >
+                  Hủy
+                </button>
+                <button
+                  class="px-4 py-2 rounded text-black border-1 border-solid border-gray-200 hover:bg-gray-100 transition duration-300"
+                >
+                  Liên hệ người bán
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            data-tab="returning"
+            class="flex flex-wrap mb-5 p-2 bg-white rounded fade-in"
+          >
+            <div
+              class="flex-1 items-center border-b-[1px] mb-5 border-solid border-[rgba(0,0,0,0.12)] flex ml-[0] my-[0] text-right basis-full justify-end px-4 py-2"
+            >
+              <a href="order-detail.html" class="items-center inline-flex m-0">
+                <span class="text-[#ee4d2d] no-underline align-middle">
+                  Hoàn trả
+                </span>
+              </a>
+            </div>
+            <div class="flex basis-full items-center gap-x-5">
+              <div class="w-[82px] h-[82px] flex-0">
+                <img
+                  src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-ljhy12voht6q4c.webp"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="flex-1">
+                <a href="#">
+                  <h4
+                    class="overflow-hidden text-[16px] leading-[22px] mt-[0] mx-[0] mb-[5px] max-h-[48px] text-justify"
+                    style="
+                      display: -webkit-box;
+                      -webkit-line-clamp: 2;
+                      -webkit-box-orient: vertical;
+                      text-overflow: ellipsis;
+                      word-break: break-word;
+                      overflow: hidden;
+                    "
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                    hic cumque officiis odio temporibus qui explicabo, voluptate
+                    nostrum, vero assumenda dolor autem eligendi perferendis
+                    fugit esse consequatur tempore dolore. Voluptate.
+                  </h4>
+                </a>
+                <p class="text-[rgba(0,0,0,.54)]">Phân loại:</p>
+                <p>Số lượng: <span>x3</span></p>
+              </div>
+              <div>
+                <span
+                  class="text-[#000] ml-[0] mr-[4px] my-[0] opacity-[.26] overflow-hidden [text-decoration-line:line-through] overflow-ellipsis"
+                  >₫32.000</span
+                >
+                <span class="text-[18px] fond-medium text-[#26aa99]"
+                  >₫22.950</span
+                >
+              </div>
+            </div>
+            <div class="flex flex-col items-end w-full mt-2">
+              <div>
+                <h3 class="text-[16px] text-black-500 font-medium">
+                  Thành tiền:
+                  <span class="text-xl text-[#26aa99]">₫68.850</span>
+                </h3>
+              </div>
+              <div class="mt-5">
+                <button
+                  class="px-4 py-2 bg-[#26aa99] rounded text-white mr-2 hover:bg-[#158d7d] transition duration-300 select-none pointer-events-none opacity-50"
+                >
+                  Đang hoàn trả
+                </button>
+                <button
+                  class="px-4 py-2 rounded text-black border-1 border-solid border-gray-200 hover:bg-gray-100 transition duration-300"
+                >
+                  Liên hệ người bán
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            data-tab="delivering"
+            class="flex flex-wrap mb-5 p-2 bg-white rounded fade-in"
+          >
+            <div
+              class="flex-1 items-center border-b-[1px] mb-5 border-solid border-[rgba(0,0,0,0.12)] flex ml-[0] my-[0] text-right basis-full justify-end px-4 py-2"
+            >
+              <a href="order-detail.html" class="items-center inline-flex m-0">
+                <span class="text-[#ee4d2d] no-underline align-middle">
+                  Đang vận chuyển
+                </span>
+              </a>
+            </div>
+            <div class="flex basis-full items-center gap-x-5">
+              <div class="w-[82px] h-[82px] flex-0">
+                <img
+                  src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-ljhy12voht6q4c.webp"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="flex-1">
+                <a href="#">
+                  <h4
+                    class="overflow-hidden text-[16px] leading-[22px] mt-[0] mx-[0] mb-[5px] max-h-[48px] text-justify"
+                    style="
+                      display: -webkit-box;
+                      -webkit-line-clamp: 2;
+                      -webkit-box-orient: vertical;
+                      text-overflow: ellipsis;
+                      word-break: break-word;
+                      overflow: hidden;
+                    "
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                    hic cumque officiis odio temporibus qui explicabo, voluptate
+                    nostrum, vero assumenda dolor autem eligendi perferendis
+                    fugit esse consequatur tempore dolore. Voluptate.
+                  </h4>
+                </a>
+                <p class="text-[rgba(0,0,0,.54)]">Phân loại:</p>
+                <p>Số lượng: <span>x3</span></p>
+              </div>
+              <div>
+                <span
+                  class="text-[#000] ml-[0] mr-[4px] my-[0] opacity-[.26] overflow-hidden [text-decoration-line:line-through] overflow-ellipsis"
+                  >₫32.000</span
+                >
+                <span class="text-[18px] fond-medium text-[#26aa99]"
+                  >₫22.950</span
+                >
+              </div>
+            </div>
+            <div class="flex flex-col items-end w-full mt-2">
+              <div>
+                <h3 class="text-[16px] text-black-500 font-medium">
+                  Thành tiền:
+                  <span class="text-xl text-[#26aa99]">₫68.850</span>
+                </h3>
+              </div>
+              <div class="mt-5">
+                <button
+                  class="px-4 py-2 bg-[#26aa99] rounded text-white mr-2 hover:bg-[#158d7d] transition duration-300 select-none pointer-events-none opacity-50"
+                >
+                  Đang giao
+                </button>
+                <button
+                  class="px-4 py-2 rounded text-black border-1 border-solid border-gray-200 hover:bg-gray-100 transition duration-300"
+                >
+                  Liên hệ người bán
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="container">
-            <div class="cr-track-box">
-              <ul class="order-nav">
-                <li class="order-nav__item active">Tất cả</li>
-                <li class="order-nav__item">Chờ xác nhận</li>
-                <li class="order-nav__item">Đang vận chuyển</li>
-                <li class="order-nav__item">Hoàn tất giao hàng</li>
-                <li class="order-nav__item">Đã hủy</li>
-                <li class="order-nav__item">Hoàn trả</li>
-              </ul>
-              <table class="table table-bordered order-table mt-5">
-                <thead>
-                  <tr>
-                    <th class="text-center" scope="col">#</th>
-                    <th class="text-center" scope="col">Sách</th>
-                    <th class="text-center" scope="col">Giá</th>
-                    <th class="text-center" scope="col">Trạng thái</th>
-                    <th class="text-center" scope="col">
-                      Phương thức thanh toán
-                    </th>
-                    <th class="text-center" scope="col"></th>
-                    <th class="text-center" scope="col"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th class="text-center" scope="row">1</th>
-                    <td class="text-center">Toán</td>
-                    <td class="text-center">200.000</td>
-                    <td class="text-center">Giao hàng thành công</td>
-                    <td class="text-center">Chuyển khoản</td>
-                    <td class="text-center">Đặt lại đơn hàng</td>
-                    <td class="text-center">Xem chi tiết</td>
-                  </tr>
-                  <tr>
-                    <th class="text-center" scope="row">1</th>
-                    <td class="text-center">Toán</td>
-                    <td class="text-center">200.000</td>
-                    <td class="text-center">Chờ xác nhận</td>
-                    <td class="text-center">Chuyển khoản</td>
-                    <td class="text-center">Hủy đơn hàng</td>
-                    <td class="text-center">Xem chi tiết</td>
-                  </tr>
-                  <tr>
-                    <th class="text-center" scope="row">1</th>
-                    <td class="text-center">Toán</td>
-                    <td class="text-center">200.000</td>
-                    <td class="text-center">Đang vận chuyển</td>
-                    <td class="text-center">Chuyển khoản</td>
-                    <td class="text-center"></td>
-                    <td class="text-center">Xem chi tiết</td>
-                  </tr>
-                  <tr>
-                    <th class="text-center" scope="row">1</th>
-                    <td class="text-center">Toán</td>
-                    <td class="text-center">200.000</td>
-                    <td class="text-center">Hoàn tất giao hàng</td>
-                    <td class="text-center">Chuyển khoản</td>
-                    <td class="text-center">Giao hàng thành công</td>
-                    <td class="text-center">Xem chi tiết</td>
-                  </tr>
-                  <tr>
-                    <th class="text-center" scope="row">1</th>
-                    <td class="text-center">Toán</td>
-                    <td class="text-center">200.000</td>
-                    <td class="text-center">Đã hủy</td>
-                    <td class="text-center">Chuyển khoản</td>
-                    <td class="text-center">Đơn hàng đã hoàn trả</td>
-                    <td class="text-center">Xem chi tiết</td>
-                  </tr>
-                </tbody>
-              </table>
 
-              <div class="d-flex justify-content-center">
-                <nav aria-label="Page navigation example">
-                  <ul class="pagination">
-                    <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">1</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">2</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">3</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </div>
+        <div class="flex justify-center">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link text-black" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&lt;</span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link text-black" href="#">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link text-black" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link text-black" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link text-black" href="#" aria-label="Next">
+                  <span aria-hidden="true">&gt;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </section>
+    </div>
     <!-- Track Order section End -->
 
     <!-- Footer -->
@@ -1261,7 +1451,7 @@
     </a>
 
     <!-- Cart -->
-    <div class="cr-cart-overlay"></div>
+    <!-- <div class="cr-cart-overlay"></div>
     <div class="cr-cart-view">
       <div class="cr-cart-inner">
         <div class="cr-cart-top">
@@ -1375,142 +1565,7 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Side-tool -->
-    <div class="cr-tool-overlay"></div>
-    <div class="cr-tool">
-      <div class="cr-tool-btn">
-        <a href="javascript:void(0)" class="btn-cr-tool result-placeholder">
-          <i class="ri-settings-line"></i>
-        </a>
-        <div class="color-variant">
-          <div class="cr-bar-title">
-            <h6>Tools</h6>
-            <a href="javascript:void(0)" class="close-tools">
-              <i class="ri-close-line"></i>
-            </a>
-          </div>
-          <div class="cr-tools-detail">
-            <div class="heading">
-              <h2>Select Color</h2>
-            </div>
-            <ul class="cr-color">
-              <li class="colors c1 active-colors"></li>
-              <li class="colors c2"></li>
-              <li class="colors c3"></li>
-              <li class="colors c4"></li>
-              <li class="colors c5"></li>
-              <li class="colors c6"></li>
-              <li class="colors c7"></li>
-              <li class="colors c8"></li>
-              <li class="colors c9"></li>
-              <li class="colors c10"></li>
-            </ul>
-          </div>
-          <div class="cr-tools-detail">
-            <div class="heading">
-              <h2>Dark mode</h2>
-            </div>
-            <ul class="dark-mode">
-              <li class="dark"></li>
-              <li class="white active-dark-mode"></li>
-            </ul>
-          </div>
-          <div class="cr-tools-detail">
-            <div class="heading">
-              <h2>Backgrounds</h2>
-            </div>
-            <ul class="bg-panel">
-              <li class="bg-1">
-                <img src="assets/img/shape/bg-shape-1.png" alt="bg-shape-1" />
-              </li>
-              <li class="bg-2">
-                <img src="assets/img/shape/bg-shape-2.png" alt="bg-shape-2" />
-              </li>
-              <li class="bg-3">
-                <img src="assets/img/shape/bg-shape-3.png" alt="bg-shape-3" />
-              </li>
-              <li class="bg-4">
-                <img src="assets/img/shape/bg-shape-4.png" alt="bg-shape-4" />
-              </li>
-              <li class="bg-5">
-                <img src="assets/img/shape/bg-shape-5.png" alt="bg-shape-5" />
-              </li>
-              <li class="bg-6 active-bg-panel">
-                <img src="assets/img/shape/bg-shape-6.png" alt="bg-shape-6" />
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- <div class="modal-cancel">
-      <div class="modal-cancel-overlay"></div>
-      <div class="modal-cancel__content">
-        <div class="modal-cancel-header">
-          <h3>Đóng</h3>
-        </div>
-        <div class="modal-cancel-body">
-          <form action="#">
-            <h3>Bạn có chắc chắn muốn hủy đơn hàng không ?</h3>
-            <button type="submit" class="btn btn-success">Có</button>
-            <button class="btn btn-danger">Không</button>
-          </form>
-        </div>
-      </div>
     </div> -->
-
-    <!-- Button trigger modal -->
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#staticBackdrop"
-    >
-      Launch static backdrop modal
-    </button>
-
-    <!-- Modal -->
-    <div
-      class="modal fade show"
-      id="staticBackdrop"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="-1"
-      aria-labelledby="staticBackdropLabel"
-      aria-modal="true"
-      role="dialog"
-    >
-      <div class="modal-cancel-overlay"></div>
-      <div class="modal-dialog" style='z-index: 999'>
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="staticBackdropLabel">
-              Modal title
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Understood</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Vendor Custom -->
     <script src="assets/js/vendor/jquery-3.6.4.min.js"></script>
@@ -1521,11 +1576,7 @@
     <script src="assets/js/vendor/aos.min.js"></script>
     <script src="assets/js/vendor/swiper-bundle.min.js"></script>
     <script src="assets/js/vendor/slick.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <script src="assets/js/vendor/tailwind.min.js"></script>
 
     <!-- Main Custom -->
     <script src="assets/js/main.js"></script>
