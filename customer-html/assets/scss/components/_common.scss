@@ -1,29 +1,14 @@
 /* Common css */
-body {
-  margin: 0;
-  background-color: $fff;
-  letter-spacing: 0.03rem;
-  overflow-x: hidden;
-}
-
 a {
   text-decoration: none;
   color: $black;
-}
-
-p {
-  margin-bottom: 0px;
-  font-size: 14px;
-  font-family: $font-family-Poppins;
-  color: $text-color;
-  line-height: 1.75;
 }
 
 .cr-banner {
   margin-bottom: 15px;
   text-align: center;
   h2 {
-    font-family: $font-family-Manrope;
+    font-family: $font-family-Poppins;
     font-size: 32px;
     font-weight: bold;
     color: $title-color;
@@ -35,7 +20,7 @@ p {
   .cr-title {
     margin-bottom: 5px;
     padding: 0 64px;
-    font-family: $font-family-Manrope;
+    font-family: $font-family-Poppins;
     font-size: 30px;
     font-weight: 800;
     color: $title-color;
@@ -156,7 +141,7 @@ p {
   transition: all 0.3s ease-in-out;
   padding: 8px 22px;
   font-size: 14px;
-  font-family: $font-family-Manrope;
+  font-family: $font-family-Poppins;
   font-weight: bold;
   text-transform: capitalize;
   line-height: 1.2;
@@ -177,7 +162,7 @@ p {
   transition: all 0.3s ease-in-out;
   padding: 8px 22px;
   font-size: 14px;
-  font-family: $font-family-Manrope;
+  font-family: $font-family-Poppins;
   font-weight: bold;
   text-transform: capitalize;
   line-height: 1.2;
@@ -351,11 +336,10 @@ p {
     flex-direction: row;
     h2 {
       margin-bottom: 0;
-      font-family: $font-family-Manrope;
+      font-family: $font-family-Poppins;
       font-size: 19px;
       line-height: 1;
       font-weight: bold;
-      color: $title-color;
     }
     span {
       font-family: $font-family-Poppins;

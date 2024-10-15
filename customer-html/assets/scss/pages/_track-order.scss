@@ -172,103 +172,52 @@ table {
   table-layout: auto;
 }
 
-.order {
-  &-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0 50px;
-    &__item {
-      cursor: pointer;
-      position: relative;
-      color: #a0a0a0;
-      font-size: 18px;
-      letter-spacing: 0.5px;
-      padding: 0 10px;
-      transition: 0.3s all linear;
-      &::before {
-        content: '';
-        position: absolute;
-        background-color: #333;
-        height: 3px;
-        width: 0;
-        left: 0;
-        bottom: -10px;
-        transition: 0.3s all linear;
-      }
-
-      &:hover {
-        color: #000;
-        &::before {
-          width: 100%;
-        }
-      }
-
-      &.active {
-        color: #000;
-        &::before {
-          content: '';
-          width: 100%;
-          height: 3px;
-          background: #333;
-          bottom: -10px;
-          left: 0;
-          border-radius: 10px;
-          position: absolute;
-        }
-      }
-    }
-  }
-  &-table thead tr > * {
-    background: #eee;
-  }
-  &-table tbody tr {
-    & > * {
-      transition: all linear 0.2s;
-    }
-    &:hover > * {
-      background: #eee;
-    }
-  }
-}
-
-.modal-cancel {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  &-overlay {
+.order_item {
+  &::after {
+    content: '';
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 99;
-  }
-  &__content {
-    border-radius: 20px;
-    position: absolute;
+    bottom: -2px;
     left: 50%;
-    top: 20%;
     transform: translateX(-50%);
-    z-index: 999;
-    background: #fff;
-    padding: 20px 50px;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background: #26aa99;
+    transform-origin: 50% 50%; 
+    transition: 0.2s all linear;
   }
-  &-header {
-    float: right;
+
+  &:hover::after {
+    width: 100%;
   }
-  &-body {
-    margin-top: 50px;
+
+  &.active {
+    color: #6eb79c;
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 2px;
+      background: #6eb79c;
+      bottom: -2px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 10px;
+      position: absolute;
+    }
   }
 }
 
-.rounded-20 {
-  border-radius: 20px;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
 }
