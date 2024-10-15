@@ -285,7 +285,7 @@ label {
   .cr-breadcrumb {
     h5 {
       font-size: 19px;
-      font-weight: 600;
+      font-weight: 700;
       color: $title-color;
     }
 
@@ -393,11 +393,7 @@ label {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-
-    h5 {
-      margin: 0;
-    }
+    justify-content: flex-end;
   }
 }
 
@@ -792,9 +788,20 @@ button.btn.btn-outline-success.dropdown-toggle.dropdown-toggle-split {
 
 .dropdown-menu {
   padding: 10px;
-  box-shadow: 0 2px 7px rgba(58, 65, 74, 0.25);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   border: 0;
   border-radius: 0;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  & {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
   .dropdown-item {
     padding: 5px 10px;
     font-size: 13px;
@@ -808,6 +815,76 @@ button.btn.btn-outline-success.dropdown-toggle.dropdown-toggle-split {
 
     & i {
       margin-right: 10px;
+    }
+  }
+  &__status {
+    padding: 0;
+    max-height: 160px;
+    & a {
+      padding: 6px 16px !important;
+      &[data-value="ALL"] {
+        border-radius: 5px;
+        &:hover {
+          color: $all-color;
+          background-color: lighten($all-color, 40%);
+        }
+      }
+
+      &[data-value="WAITING_CONFIRMATION"] {
+        border-radius: 5px;
+        &:hover {
+          color: $waiting-confirmation-color;
+          background-color: lighten($waiting-confirmation-color, 40%);
+        }
+      }
+
+      &[data-value="PACKING"] {
+        border-radius: 5px;
+        &:hover {
+          color: $packing-color;
+          background-color: lighten($packing-color, 40%);
+        }
+      }
+
+      &[data-value="SHIPPING"] {
+        border-radius: 5px;
+        &:hover {
+          color: $shipping-color;
+          background-color: lighten($shipping-color, 40%);
+        }
+      }
+
+      &[data-value="COMPLETE_DELIVERY"] {
+        border-radius: 5px;
+        &:hover {
+          color: $complete-delivery-color;
+          background-color: lighten($complete-delivery-color, 40%);
+        }
+      }
+
+      &[data-value="CANCELED"] {
+        border-radius: 5px;
+        &:hover {
+          color: $canceled-color;
+          background-color: lighten($canceled-color, 40%);
+        }
+      }
+
+      &[data-value="REQUEST_REFUND"] {
+        border-radius: 5px;
+        &:hover {
+          color: $request-refund-color;
+          background-color: lighten($request-refund-color, 40%);
+        }
+      }
+
+      &[data-value="REFUNDED"] {
+        border-radius: 5px;
+        &:hover {
+          color: $refunded-color;
+          background-color: lighten($refunded-color, 40%);
+        }
+      }
     }
   }
 }
