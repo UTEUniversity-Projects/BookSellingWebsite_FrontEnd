@@ -8789,6 +8789,7 @@ table {
     margin-bottom: 24px;
   }
 }
+
 .verify-email::before {
   content: "";
   position: absolute;
@@ -8801,5 +8802,6 @@ table {
   border-bottom: 15px solid transparent;
   border-right: 15px solid rgba(254, 202, 202, 0.5);
 }
+
 
 /*# sourceMappingURL=style.css.map */

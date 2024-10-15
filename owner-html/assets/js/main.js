@@ -555,8 +555,40 @@
             "dom": '<"row justify-content-between top-information"lf>rt<"row justify-content-between bottom-information"ip><"clear">'
         });
     }
-    /*========== Recent order DATA TABLE(add-category.html.html) ===========*/
+    /*========== Recent order DATA TABLE(add-product-category.html.html) ===========*/
     var responsiveDataTable = $("#cat_data_table");
+    if (responsiveDataTable.length !== 0) {
+        responsiveDataTable.DataTable({
+            "aLengthMenu": [[10, 20, 30, 50, 75, -1], [10, 20, 30, 50, 75, "All"]],
+            "pageLength": 10,
+            "dom": '<"row justify-content-between top-information"lf>rt<"row justify-content-between bottom-information"ip><"clear">'
+        });
+    }
+    var responsiveDataTable = $("#discount_table");
+    if (responsiveDataTable.length !== 0) {
+        responsiveDataTable.DataTable({
+            "aLengthMenu": [[10, 20, 30, 50, 75, -1], [10, 20, 30, 50, 75, "All"]],
+            "pageLength": 10,
+            "dom": '<"row justify-content-between top-information"lf>rt<"row justify-content-between bottom-information"ip><"clear">'
+        });
+    } 
+    var responsiveDataTable = $("#voucher_table");
+    if (responsiveDataTable.length !== 0) {
+        responsiveDataTable.DataTable({
+            "aLengthMenu": [[10, 20, 30, 50, 75, -1], [10, 20, 30, 50, 75, "All"]],
+            "pageLength": 10,
+            "dom": '<"row justify-content-between top-information"lf>rt<"row justify-content-between bottom-information"ip><"clear">'
+        });
+    }
+    var responsiveDataTable = $("#coupon_table");
+    if (responsiveDataTable.length !== 0) {
+        responsiveDataTable.DataTable({
+            "aLengthMenu": [[10, 20, 30, 50, 75, -1], [10, 20, 30, 50, 75, "All"]],
+            "pageLength": 10,
+            "dom": '<"row justify-content-between top-information"lf>rt<"row justify-content-between bottom-information"ip><"clear">'
+        });
+    }
+    var responsiveDataTable = $("#freeship_table");
     if (responsiveDataTable.length !== 0) {
         responsiveDataTable.DataTable({
             "aLengthMenu": [[10, 20, 30, 50, 75, -1], [10, 20, 30, 50, 75, "All"]],
@@ -611,7 +643,44 @@
             "dom": '<"row justify-content-between top-information"lf>rt<"row justify-content-between bottom-information"ip><"clear">'
         });
     }
-
+    var responsiveDataTable = $("#discount_list");
+    if (responsiveDataTable.length !== 0) {
+        responsiveDataTable.DataTable({
+            "aLengthMenu": [[10, 20, 30, -1], [10, 20, 30, "All"]],
+            "pageLength": 10,
+            "dom": '<"row justify-content-between top-information"lf>rt<"row justify-content-between bottom-information"ip><"clear">'
+        });
+    }
+    
+    
+    var responsiveDataTable = $("#voucher_list");
+    if (responsiveDataTable.length !== 0) {
+        responsiveDataTable.DataTable({
+            "aLengthMenu": [[10, 20, 30, -1], [10, 20, 30, "All"]],
+            "pageLength": 10,
+            "dom": '<"row justify-content-between top-information"lf>rt<"row justify-content-between bottom-information"ip><"clear">'
+        });
+    }
+    
+    
+    var responsiveDataTable = $("#coupon_list");
+    if (responsiveDataTable.length !== 0) {
+        responsiveDataTable.DataTable({
+            "aLengthMenu": [[10, 20, 30, -1], [10, 20, 30, "All"]],
+            "pageLength": 10,
+            "dom": '<"row justify-content-between top-information"lf>rt<"row justify-content-between bottom-information"ip><"clear">'
+        });
+    }
+    
+    
+    var responsiveDataTable = $("#freeship_list");
+    if (responsiveDataTable.length !== 0) {
+        responsiveDataTable.DataTable({
+            "aLengthMenu": [[10, 20, 30, -1], [10, 20, 30, "All"]],
+            "pageLength": 10,
+            "dom": '<"row justify-content-between top-information"lf>rt<"row justify-content-between bottom-information"ip><"clear">'
+        });
+    }
     /*========== On ckick card zoom (full screen) ===========*/
     $(".cr-full-card").on("click", function () {
         $(this).hide();
@@ -1007,4 +1076,174 @@
         $(this).parents(".cr-tools-info").find('.cr-tools-item.bg').removeClass("active")
         $(this).addClass("active");
     });
+
 })(jQuery);
+// page add promotion
+
+const tabItems = document.querySelectorAll(".tab-item-promotion");
+const tabContents = document.querySelectorAll(".cr-promotion");
+
+for (const tabItem of tabItems) {
+    for (const tabContent of tabContents) {
+        if (tabContent.dataset.tab === tabItem.dataset.tab) {
+            tabContent.classList.add("active");
+            break;
+        }
+    } 
+    break;
+}
+tabItems.forEach((tabItem) => {   
+   tabItem.addEventListener("click", () => {
+      tabItems.forEach((tabItem) => tabItem.classList.remove("active"));
+
+      tabItem.classList.add("active");
+
+      tabContents.forEach((tabContent) =>
+         tabContent.classList.remove("active")
+      );
+      tabContents.forEach((tabContent) => {
+         if (tabContent.dataset.tab === tabItem.dataset.tab)
+            tabContent.classList.add("active");
+      });
+   });
+});
+// page list promotion
+const tabPromotionItems = document.querySelectorAll(".tab-item-promotion");
+const tabPromotionsContents = document.querySelectorAll(".promotion-list");
+
+for (const tabPromotionItem of tabPromotionItems) {
+    for (const tabPromotionsContent of tabPromotionsContents) {
+        if (tabPromotionsContent.dataset.tab === tabPromotionItem.dataset.tab) {
+            tabPromotionsContent.classList.add("active");
+            break;
+        }
+    } 
+    break;
+};
+tabPromotionItems.forEach((tabPromotionItem) => {   
+    tabPromotionItem.addEventListener("click", () => {
+        tabPromotionItems.forEach((tabPromotionItem) => tabPromotionItem.classList.remove("active"));
+
+        tabPromotionItem.classList.add("active");
+
+        tabPromotionsContents.forEach((tabPromotionsContent) =>
+            tabPromotionsContent.classList.remove("active")
+      );
+      tabPromotionsContents.forEach((tabPromotionsContent) => {
+         if (tabPromotionsContent.dataset.tab === tabPromotionItem.dataset.tab)
+            tabPromotionsContent.classList.add("active");
+      });
+   });
+});
+// add promotion discount
+function handleObjectSelectChange(objectSelect, listproductcategorysubcategory, categorySelect, subcategorySelect) {
+    const selectedValue = objectSelect.value;
+
+    if (selectedValue === '2') {
+        listproductcategorysubcategory.classList.remove('disabled');
+        categorySelect.disabled = true;
+        subcategorySelect.disabled = true;
+    } 
+    else if (selectedValue === '3') {
+        listproductcategorysubcategory.classList.remove('disabled');
+        categorySelect.disabled = false;
+        subcategorySelect.disabled = true;
+    } 
+    else if (selectedValue === '4') {
+        listproductcategorysubcategory.classList.add('disabled');
+    } 
+    else {
+        listproductcategorysubcategory.classList.remove('disabled');
+        categorySelect.disabled = false;
+        subcategorySelect.disabled = false;
+    }
+}
+const objectSelectDiscount = document.getElementById('select-object-discount');
+const categorySelectDiscount = document.getElementById('category-select-discount');
+const subcategorySelectDiscount = document.getElementById('subcategory-select-discount');
+const listproductcategorysubcategoryDiscount = document.getElementById('list-product-category-subcategory-discount');
+
+objectSelectDiscount.addEventListener('change', function() {
+    handleObjectSelectChange(objectSelectDiscount, listproductcategorysubcategoryDiscount, categorySelectDiscount, subcategorySelectDiscount);
+});
+const objectSelectVoucher = document.getElementById('select-object-voucher');
+const categorySelectVoucher = document.getElementById('category-select-voucher');
+const subcategorySelectVoucher = document.getElementById('subcategory-select-voucher');
+const listproductcategorysubcategoryVoucher = document.getElementById('list-product-category-subcategory-voucher');
+
+objectSelectVoucher.addEventListener('change', function() {
+    handleObjectSelectChange(objectSelectVoucher, listproductcategorysubcategoryVoucher, categorySelectVoucher, subcategorySelectVoucher);
+});
+const objectSelectCoupon = document.getElementById('select-object-coupon');
+const categorySelectCoupon = document.getElementById('category-select-coupon');
+const subcategorySelectCoupon = document.getElementById('subcategory-select-coupon');
+const listproductcategorysubcategoryCoupon = document.getElementById('list-product-category-subcategory-coupon');
+
+objectSelectCoupon.addEventListener('change', function() {
+    handleObjectSelectChange(objectSelectCoupon, listproductcategorysubcategoryCoupon, categorySelectCoupon, subcategorySelectCoupon);
+});
+const objectSelectFreeship = document.getElementById('select-object-freeship');
+const categorySelectFreeship = document.getElementById('category-select-freeship');
+const subcategorySelectFreeship = document.getElementById('subcategory-select-freeship');
+const listproductcategorysubcategoryFreeship = document.getElementById('list-product-category-subcategory-freeship');
+
+objectSelectFreeship.addEventListener('change', function() {
+    handleObjectSelectChange(objectSelectFreeship, listproductcategorysubcategoryFreeship, categorySelectFreeship, subcategorySelectFreeship);
+});
+// check box promotion
+const selectAllCheckbox = document.getElementById('select-all');
+
+const rowCheckboxes = document.querySelectorAll('.row-checkbox');
+
+const rows = document.querySelectorAll('.selectable-row');
+
+selectAllCheckbox.addEventListener('change', function() {
+    const isChecked = selectAllCheckbox.checked;
+
+    rowCheckboxes.forEach(checkbox => {
+        checkbox.checked = isChecked;
+    });
+});
+
+rows.forEach(row => {
+    row.addEventListener('click', function(event) {
+        const checkbox = row.querySelector('input[type="checkbox"]');
+
+        if (event.target !== checkbox) {
+            checkbox.checked = !checkbox.checked;
+        }
+        updateSelectAllState();
+    });
+});
+
+rowCheckboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+        updateSelectAllState();
+    });
+});
+
+function updateSelectAllState() {
+    const allChecked = Array.from(rowCheckboxes).every(cb => cb.checked);
+    selectAllCheckbox.checked = allChecked;
+}
+
+
+// Hàm để thay đổi id biểu đồ
+function changeChartId(oldId, newId) {
+    const chartElement = document.getElementById(oldId);
+    if (chartElement) {
+        chartElement.id = newId;
+    }
+}
+
+// Biểu đồ 1
+const barChartRevenueIcon = document.getElementById('barChartRevenueIcon');
+const lineChartRevenueIcon = document.getElementById('lineChartRevenueIcon');
+
+barChartRevenueIcon.addEventListener('click', function() {
+    changeChartId('revenueLineChart', 'revenueBarChart');
+});
+
+lineChartRevenueIcon.addEventListener('click', function() {
+    changeChartId('revenueBarChart', 'revenueLineChart');
+});

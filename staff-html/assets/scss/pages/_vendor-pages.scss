@@ -401,13 +401,13 @@
                     border-radius: $radius;
                 }
                 .active {
-                    color: $main-third-color;
+                    color: $active-color;
                 }
                 .pending {
-                    color: $main-secondary-color;
+                    color: $waiting-confirmation-color;
                 }
                 .disable {
-                    color: $main-fourth-color;
+                    color: $canceled-color;
                 }
             }
         }
