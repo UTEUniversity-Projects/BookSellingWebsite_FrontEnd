@@ -793,75 +793,7 @@
     });
   });
 
-  $(document).ready(function () {
-    $('.btn-register').on('click', function (event) {
-      // Prevent the default button behavior
-      event.preventDefault();
-
-      // Clear any previous validation messages
-      $('.form-group').removeClass('has-error');
-      $('.error-message').remove();
-
-      // Flag to track if the form is valid
-      let isValid = true;
-
-      // Validate each required field
-      $('.cr-form-control').each(function () {
-        if ($(this).val() === '') {
-          isValid = false;
-          $(this).closest('.form-group').addClass('has-error');
-          $(this).after(
-            '<div class="error-message text-[16px] text-red-500">Trường này không được để trống</div>'
-          );
-        }
-      });
-
-      // Validate email format
-      const email = $('input[type="email"]').val();
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (email && !emailPattern.test(email)) {
-        isValid = false;
-        $('input[type="email"]').closest('.form-group').addClass('has-error');
-        $('input[type="email"]').after(
-          '<div class="error-message text-[16px] text-red-500">Email không hợp lệ</div>'
-        );
-      }
-
-      // Validate password match
-      const password = $('input[type="password"]').eq(0).val();
-      const confirmPassword = $('input[type="password"]').eq(1).val();
-      if (password !== confirmPassword) {
-        isValid = false;
-        $('input[type="password"]')
-          .eq(1)
-          .closest('.form-group')
-          .addClass('has-error');
-        $('input[type="password"]')
-          .eq(1)
-          .after(
-            '<div class="error-message text-[16px] text-red-500">Mật khẩu không khớp</div>'
-          );
-      }
-
-      // Validate terms checkbox
-      const termsCheckbox = $('#check-with-link')[0]; // Use the checkbox ID
-      const errorMsg =
-        '<div class="ml-5 error-message text-[16px] text-red-500">Bạn cần đồng ý với các điều khoản</div>';
-      if (!termsCheckbox.checked) {
-        isValid = false; // Set isValid to false
-        termsCheckbox.parentNode.parentNode.insertAdjacentHTML('beforeend', errorMsg);
-      }
-
-      // Submit the form if valid
-      if (isValid) {
-        // Optionally, you can submit the form via AJAX or normal submission here
-        alert('Form is valid!'); // Placeholder for form submission
-
-        // Uncomment below to submit the form if you're using a standard form submission
-        // $('.cr-content-form').submit();
-      }
-    });
-  });
+  
 
   // console.log($)
 })(jQuery);
