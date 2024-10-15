@@ -1,4 +1,4 @@
-$(document).ready(function () {
+export function register() {
   $('.btn-register').on('click', function (event) {
     event.preventDefault();
 
@@ -57,4 +57,4 @@ $(document).ready(function () {
       alert('Form is valid!');
     }
   });
-});
+}

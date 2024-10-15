@@ -31,7 +31,13 @@
     <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/vendor/jquery.slick.css" />
     <link rel="stylesheet" href="assets/css/vendor/slick-theme.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
@@ -715,10 +721,9 @@
                       <label>Họ</label>
                       <input
                         readonly
-                        style="pointer-events: none; user-select: none"
                         type="text"
                         placeholder="Họ"
-                        class="cr-form-control"
+                        class="block w-full py-2 px-4 text-gray-900 border-1 border-gray-300 rounded-lg bg-gray-50 text-[16px] transition-all ease-linear bg-white select-none pointer-events-none"
                       />
                     </div>
                   </div>
@@ -727,10 +732,9 @@
                       <label>Tên</label>
                       <input
                         readonly
-                        style="pointer-events: none; user-select: none"
                         type="text"
                         placeholder="Tên"
-                        class="cr-form-control"
+                        class="block w-full py-2 px-4 text-gray-900 border-1 border-gray-300 rounded-lg bg-gray-50 text-[16px] transition-all ease-linear bg-white select-none pointer-events-none"
                       />
                     </div>
                   </div>
@@ -739,23 +743,53 @@
                       <label>Username</label>
                       <input
                         readonly
-                        style="pointer-events: none; user-select: none"
-                        type="email"
+                        type="text"
                         placeholder="Username"
-                        class="cr-form-control"
+                        class="block w-full py-2 px-4 text-gray-900 border-1 border-gray-300 rounded-lg bg-gray-50 text-[16px] transition-all ease-linear bg-white select-none pointer-events-none"
                       />
                     </div>
                   </div>
                   <div class="col-12 col-sm-6">
                     <div class="form-group">
-                      <label>Email</label>
+                      <label>Ngày sinh</label>
                       <input
                         readonly
-                        style="pointer-events: none; user-select: none"
-                        type="email"
-                        placeholder="Email"
-                        class="cr-form-control"
+                        type="text"
+                        placeholder="Username"
+                        class="block w-full py-2 px-4 text-gray-900 border-1 border-gray-300 rounded-lg bg-gray-50 text-[16px] transition-all ease-linear bg-white select-none pointer-events-none"
                       />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12">
+                    <div class="form-group">
+                      <label>Email</label>
+                      <div
+                        class="flex items-center justify-between border-1 border-solid border-gray-300 rounded-lg"
+                      >
+                        <input
+                          readonly
+                          type="email"
+                          placeholder="Email"
+                          class="block w-full py-2 px-4 text-gray-900 rounded-lg bg-gray-50 text-[16px] transition-all ease-linear bg-white select-none pointer-events-none"
+                        />
+                        <div
+                          class="text-red-500 flex items-center justify-center bg-red-200/60 hover:bg-red-200/80 transition-all ease-linear w-5 h-5 rounded-full mr-2 relative group"
+                        >
+                          <span
+                            ><i class="fa-regular fa-circle-xmark"></i
+                          ></span>
+                          <div
+                            class="absolute verify-email absolute right-[-243px] top-1/2 bg-red-200/50 px-3 translate-y-[-50%] py-2 text-center hover:bg-red-200/80 transition-all ease-linear rounded-md transition-all ease-linear opacity-0 invisible origin-left scale-0 group-hover:opacity-100 group-hover:visible group-hover:scale-100 duration-300"
+                          >
+                            <p>Email chưa được xác thực</p>
+                            <a
+                              href="#"
+                              class="inline-block p-2 rounded-md bg-red-200"
+                              >Xác thực ngay</a
+                            >
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="col-12 col-sm-6">
@@ -763,10 +797,9 @@
                       <label>Số điện thoại</label>
                       <input
                         readonly
-                        style="pointer-events: none; user-select: none"
                         type="text"
                         placeholder="Số điện thoại"
-                        class="cr-form-control"
+                        class="block w-full py-2 px-4 text-gray-900 border-1 border-gray-300 rounded-lg bg-gray-50 text-[16px] transition-all ease-linear bg-white select-none pointer-events-none"
                       />
                     </div>
                   </div>
@@ -775,10 +808,9 @@
                       <label>Số nhà | Ấp | Tổ</label>
                       <input
                         readonly
-                        style="pointer-events: none; user-select: none"
                         type="email"
                         placeholder="Số nhà | Ấp | Tổ"
-                        class="cr-form-control"
+                        class="block w-full py-2 px-4 text-gray-900 border-1 border-gray-300 rounded-lg bg-gray-50 text-[16px] transition-all ease-linear bg-white select-none pointer-events-none"
                       />
                     </div>
                   </div>
@@ -787,10 +819,9 @@
                       <label>Xã | Phường | Thị trấn</label>
                       <input
                         readonly
-                        style="pointer-events: none; user-select: none"
                         type="email"
                         placeholder="Xã | Phường | Thị trấn"
-                        class="cr-form-control"
+                        class="block w-full py-2 px-4 text-gray-900 border-1 border-gray-300 rounded-lg bg-gray-50 text-[16px] transition-all ease-linear bg-white select-none pointer-events-none"
                       />
                     </div>
                   </div>
@@ -799,10 +830,9 @@
                       <label>Quận | Huyện</label>
                       <input
                         readonly
-                        style="pointer-events: none; user-select: none"
                         type="email"
                         placeholder="Quận | Huyện"
-                        class="cr-form-control"
+                        class="block w-full py-2 px-4 text-gray-900 border-1 border-gray-300 rounded-lg bg-gray-50 text-[16px] transition-all ease-linear bg-white select-none pointer-events-none"
                       />
                     </div>
                   </div>
@@ -811,10 +841,9 @@
                       <label>Tỉnh | Thành phố</label>
                       <input
                         readonly
-                        style="pointer-events: none; user-select: none"
                         type="email"
                         placeholder="Tỉnh | Thành phố"
-                        class="cr-form-control"
+                        class="block w-full py-2 px-4 text-gray-900 border-1 border-gray-300 rounded-lg bg-gray-50 text-[16px] transition-all ease-linear bg-white select-none pointer-events-none"
                       />
                     </div>
                   </div>
@@ -823,23 +852,29 @@
                       <label>Quốc gia</label>
                       <input
                         readonly
-                        style="pointer-events: none; user-select: none"
                         type="email"
                         placeholder="Quốc gia"
-                        class="cr-form-control"
+                        class="block w-full py-2 px-4 text-gray-900 border-1 border-gray-300 rounded-lg bg-gray-50 text-[16px] transition-all ease-linear bg-white select-none pointer-events-none"
                       />
                     </div>
                   </div>
                   <div class="col-12 col-sm-6">
                     <form></form>
                     <form class="form-group mx-auto w-100" action="index.html">
-                      <button type="submit" class="cr-button w-100">Trang chủ</button>
+                      <button type="submit" class="cr-button w-100">
+                        Trang chủ
+                      </button>
                     </form>
                   </div>
                   <div class="col-12 col-sm-6">
                     <form></form>
-                    <form class="form-group mx-auto w-100" action="update-information.html">
-                      <button type="submit" class="cr-button w-100">Cập nhật</button>
+                    <form
+                      class="form-group mx-auto w-100"
+                      action="update-information.html"
+                    >
+                      <button type="submit" class="cr-button w-100">
+                        Cập nhật
+                      </button>
                     </form>
                   </div>
                 </div>
@@ -1382,6 +1417,7 @@
     <script src="assets/js/vendor/aos.min.js"></script>
     <script src="assets/js/vendor/swiper-bundle.min.js"></script>
     <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/tailwind.min.js"></script>
 
     <!-- Main Custom -->
     <script src="assets/js/main.js"></script>
