@@ -404,10 +404,10 @@
                     color: $active-color;
                 }
                 .pending {
-                    color: $pending-color;
+                    color: $waiting-confirmation-color;
                 }
                 .disable {
-                    color: $disable-color;
+                    color: $canceled-color;
                 }
             }
         }
