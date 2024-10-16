@@ -964,6 +964,7 @@
             showCancelButton: true,
             confirmButtonText: "Ok",
         });
+
     });
     $(".pop-delete-cancel").on("click", function () {
         const swalWithBootstrapButtons = Swal.mixin({
@@ -973,7 +974,6 @@
             },
             buttonsStyling: false,
         });
-
         swalWithBootstrapButtons
             .fire({
                 title: "Are you sure?",
