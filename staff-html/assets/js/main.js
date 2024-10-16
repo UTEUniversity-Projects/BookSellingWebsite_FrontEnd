@@ -656,7 +656,7 @@
           [5, 20, 30, 50, 75, "All"],
         ],
         pageLength: 5,
-        columnDefs: [{ orderable: false, targets: [5] }], // Giả định cột thứ 5 không cần sắp xếp
+        columnDefs: [{ orderable: false, targets: [5] }],
         dom: '<"row justify-content-between top-information"l>rt<"row justify-content-between bottom-information"ip><"clear">',
       });
 
@@ -675,7 +675,41 @@
           }
           return false;
         });
+        table.draw();
+      });
+    }
+  });
 
+  /*======== Product list DATA TABLE ========*/
+  $(document).ready(function () {
+    var responsiveDataTable = $("#product-data-table");
+
+    if (responsiveDataTable.length !== 0) {
+      var table = responsiveDataTable.DataTable({
+        aLengthMenu: [
+          [5, 10, 30, 50, 75, -1],
+          [5, 10, 30, 50, 75, "All"],
+        ],
+        pageLength: 5,
+        columnDefs: [{ orderable: false, targets: [0, 6, 7] }],
+        dom: '<"row justify-content-between top-information"l>rt<"row justify-content-between bottom-information"ip><"clear">',
+      });
+
+      $(".dropdown-item").on("click", function () {
+        var selectedStatus = $(this).data("value");
+
+        $.fn.dataTable.ext.search = [];
+
+        $.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
+          var status = $(table.row(dataIndex).node())
+            .find("td[data-status]")
+            .data("status");
+          console.log(status);
+          if (selectedStatus === "ALL" || status === selectedStatus) {
+            return true;
+          }
+          return false;
+        });
         table.draw();
       });
     }

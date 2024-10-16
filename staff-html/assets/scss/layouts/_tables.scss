@@ -247,12 +247,14 @@ table.dataTable {
       background-color: lighten($active-color, 40%);
     }
 
-    &__canceled {
+    &__canceled,
+    &__out_of_stock {
       color: $canceled-color;
       background-color: lighten($canceled-color, 40%);
     }
 
-    &__pending {
+    &__pending,
+    &__coming_soon {
       color: $waiting-confirmation-color;
       background-color: lighten($waiting-confirmation-color, 40%);
     }
@@ -267,9 +269,10 @@ table.dataTable {
       background-color: lighten($shipping-color, 40%);
     }
 
-    &__complete_delivery {
+    &__complete_delivery,
+    &__on_sale {
       color: $complete-delivery-color;
-      background-color: lighten($complete-delivery-color, 40%);
+      background-color: lighten($complete-delivery-color, 50%);
     }
 
     &__request_refund {
@@ -277,7 +280,8 @@ table.dataTable {
       background-color: lighten($request-refund-color, 40%);
     }
 
-    &__refunded {
+    &__refunded,
+    &__stop_selling {
       color: $refunded-color;
       background-color: lighten($refunded-color, 40%);
     }
