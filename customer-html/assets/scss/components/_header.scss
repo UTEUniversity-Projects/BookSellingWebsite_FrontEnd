@@ -975,9 +975,8 @@ ul.navbar-nav {
       border-bottom: 1px solid #e3e3e3;
       padding-bottom: 5px;
       transition: all linear 0.2s;
-      padding: 5px 0;
       &:hover {
-        background: #d3d3d3;
+        background: #eee;
       }
       & a {
         display: -webkit-box;
@@ -993,7 +992,10 @@ ul.navbar-nav {
     width: 100%;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 10px;
+    transition: all 0.2s linear;
+    &:hover {
+      background: #eee;
+    }
   }
 }
 
@@ -1001,16 +1003,35 @@ ul.navbar-nav {
   opacity: 0;
   visibility: hidden;
   transform: scale(0);
-  transition: all 0.2s ease;
   position: absolute;
   width: 500px;
   background: #fff;
   box-shadow: rgba(149, 157, 165, 0.5) 0px -3px 24px;
-  left: -100%;
-  padding: 20px;
-  padding-bottom: 5px;
-  transform-origin: 200px 0;
+  right: 0%;
+  transform-origin: 434px -20px;
   top: 40px;
+  --width: 12px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: 0;
+    height: 20px;
+    width: 100%;
+    background: transparent;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: calc(var(--width) * -1);
+    right: 60px;
+    width: 0;
+    height: 0;
+    border-left: var(--width) solid transparent;
+    border-right: var(--width) solid transparent;
+
+    border-bottom: var(--width) solid #fff;
+  }
 }
 
 .notification:hover .notification-content {
@@ -1019,12 +1040,30 @@ ul.navbar-nav {
   transform: scale(1);
 }
 
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+.account {
+  &-list {
+    --width: 12px;
 
-.text-justify {
-  text-align: justify;
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: 130px -20px;
+    transform: scale(0);
+    &::before {
+      content: '';
+      position: absolute;
+      top: calc(var(--width) * -1);
+      right: 50px;
+      width: 0;
+      height: 0;
+      border-left: var(--width) solid transparent;
+      border-right: var(--width) solid transparent;
+
+      border-bottom: var(--width) solid #fff;
+    }
+  }
+  &:hover &-list {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
 }
