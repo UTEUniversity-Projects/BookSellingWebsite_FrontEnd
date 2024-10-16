@@ -802,73 +802,93 @@ button.btn.btn-outline-success.dropdown-toggle.dropdown-toggle-split {
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
-  }
-  &__status {
-    padding: 0;
-    max-height: 160px;
-    & a {
-      padding: 6px 16px !important;
-      &[data-value="ALL"] {
-        border-radius: 5px;
-        &:hover {
-          color: $all-color;
-          background-color: lighten($all-color, 40%);
-        }
-      }
+    .dropdown-item {
+        padding: 5px 10px;
+        font-size: 13px;
+        color: $text-777;
+        border-radius: $radius;
+        text-transform: capitalize;
 
-      &[data-value="WAITING_CONFIRMATION"],
-      &[data-value="COMING_SOON"] {
-        border-radius: 5px;
-        &:hover {
-          color: $waiting-confirmation-color;
-          background-color: lighten($waiting-confirmation-color, 40%);
-        }
-      }
-
-      &[data-value="PACKING"] {
-        border-radius: 5px;
-        &:hover {
-          color: $packing-color;
-          background-color: lighten($packing-color, 40%);
-        }
-      }
-
-      &[data-value="SHIPPING"] {
-        border-radius: 5px;
-        &:hover {
-          color: $shipping-color;
-          background-color: lighten($shipping-color, 40%);
-        }
-      }
-
-      &[data-value="COMPLETE_DELIVERY"],
-      &[data-value="ON_SALE"] {
-        border-radius: 5px;
-        &:hover {
-          color: $complete-delivery-color;
-          background-color: lighten($complete-delivery-color, 40%);
-        }
-      }
-
-      &[data-value="CANCELED"],
-      &[data-value="OUT_OF_STOCK"] {
-        border-radius: 5px;
-        &:hover {
-          color: $canceled-color;
-          background-color: lighten($canceled-color, 40%);
+        &:active {
+            background-color: #e9ecef;
         }
 
         & i {
             margin-right: 10px;
         }
-      }
+    }
+    &__status {
+        padding: 0;
+        max-height: 160px;
+        & a {
+            padding: 6px 16px !important;
+            &[data-value="ALL"] {
+                border-radius: 5px;
+                &:hover {
+                    color: $all-color;
+                    background-color: lighten($all-color, 40%);
+                }
+            }
 
-      &[data-value="REFUNDED"],
-      &[data-value="STOP_SELLING"] {
-        border-radius: 5px;
-        &:hover {
-          color: $refunded-color;
-          background-color: lighten($refunded-color, 40%);
+            &[data-value="WAITING_CONFIRMATION"],
+            &[data-value="COMING_SOON"] {
+                border-radius: 5px;
+                &:hover {
+                    color: $waiting-confirmation-color;
+                    background-color: lighten($waiting-confirmation-color, 40%);
+                }
+            }
+
+            &[data-value="PACKING"] {
+                border-radius: 5px;
+                &:hover {
+                    color: $packing-color;
+                    background-color: lighten($packing-color, 40%);
+                }
+            }
+
+            &[data-value="SHIPPING"] {
+                border-radius: 5px;
+                &:hover {
+                    color: $shipping-color;
+                    background-color: lighten($shipping-color, 40%);
+                }
+            }
+
+            &[data-value="COMPLETE_DELIVERY"],
+            &[data-value="ON_SALE"] {
+                border-radius: 5px;
+                &:hover {
+                    color: $complete-delivery-color;
+                    background-color: lighten($complete-delivery-color, 40%);
+                }
+            }
+
+            &[data-value="CANCELED"],
+            &[data-value="OUT_OF_STOCK"] {
+                border-radius: 5px;
+                &:hover {
+                    color: $canceled-color;
+                    background-color: lighten($canceled-color, 40%);
+                }
+            }
+
+            &[data-value="REQUEST_REFUND"] {
+                border-radius: 5px;
+                &:hover {
+                    color: $request-refund-color;
+                    background-color: lighten($request-refund-color, 40%);
+                }
+            }
+
+            &[data-value="REFUNDED"],
+            &[data-value="STOP_SELLING"] {
+                border-radius: 5px;
+                &:hover {
+                    color: $refunded-color;
+                    background-color: lighten($refunded-color, 40%);
+                }
+            }
         }
     }
 }
