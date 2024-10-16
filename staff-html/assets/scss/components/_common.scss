@@ -830,7 +830,8 @@ button.btn.btn-outline-success.dropdown-toggle.dropdown-toggle-split {
         }
       }
 
-      &[data-value="WAITING_CONFIRMATION"] {
+      &[data-value="WAITING_CONFIRMATION"],
+      &[data-value="COMING_SOON"] {
         border-radius: 5px;
         &:hover {
           color: $waiting-confirmation-color;
@@ -854,7 +855,8 @@ button.btn.btn-outline-success.dropdown-toggle.dropdown-toggle-split {
         }
       }
 
-      &[data-value="COMPLETE_DELIVERY"] {
+      &[data-value="COMPLETE_DELIVERY"],
+      &[data-value="ON_SALE"] {
         border-radius: 5px;
         &:hover {
           color: $complete-delivery-color;
@@ -862,7 +864,8 @@ button.btn.btn-outline-success.dropdown-toggle.dropdown-toggle-split {
         }
       }
 
-      &[data-value="CANCELED"] {
+      &[data-value="CANCELED"],
+      &[data-value="OUT_OF_STOCK"] {
         border-radius: 5px;
         &:hover {
           color: $canceled-color;
@@ -878,7 +881,8 @@ button.btn.btn-outline-success.dropdown-toggle.dropdown-toggle-split {
         }
       }
 
-      &[data-value="REFUNDED"] {
+      &[data-value="REFUNDED"],
+      &[data-value="STOP_SELLING"] {
         border-radius: 5px;
         &:hover {
           color: $refunded-color;

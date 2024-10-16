@@ -890,19 +890,19 @@
                 </div>
                 <div class="cr-card-content card-default">
                   <div class="table-responsive">
-                    <table id="order-data-table" class="table">
+                    <table id="order-data-table" class="table table-hover">
                       <thead>
                         <tr>
-                          <th width="10%">ID</th>
-                          <th width="15%">Customer</th>
-                          <th width="10%">Date</th>
-                          <th width="15%">Amount</th>
-                          <th width="10%">Payment</th>
-                          <th width="15%">
+                          <th>Mã</th>
+                          <th>Khách hàng</th>
+                          <th>Ngày lập đơn</th>
+                          <th>Tổng tiền</th>
+                          <th>Thanh toán</th>
+                          <th>
                             <div
                               class="d-flex justify-content-around align-items-center"
                             >
-                              <span>Status</span>
+                              <span>Trạng thái</span>
                               <div>
                                 <button
                                   type="button"
@@ -916,7 +916,9 @@
                                     <i class="ri-arrow-down-s-line"></i>
                                   </span>
                                 </button>
-                                <div class="dropdown-menu dropdown-menu__status">
+                                <div
+                                  class="dropdown-menu dropdown-menu__status"
+                                >
                                   <a
                                     class="dropdown-item"
                                     href="#"
@@ -977,8 +979,7 @@
                               </div>
                             </div>
                           </th>
-                          <th width="20%">Address</th>
-                          <th width="5%">Action</th>
+                          <th width="11%">Hành động</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -994,9 +995,6 @@
                             >
                           </td>
                           <td>
-                            24, Lorem Ipsum, the printing, typesetting industry.
-                          </td>
-                          <td>
                             <div class="d-flex justify-content-start">
                               <button
                                 type="button"
@@ -1029,9 +1027,9 @@
                         </tr>
                         <tr>
                           <td class="token">#fx2650</td>
-                          <td>Avira Venusio</td>
+                          <td>Bvira Venusio</td>
                           <td>10/14/2024</td>
-                          <td>1.000.000VND</td>
+                          <td>2.000.000VND</td>
                           <td>Momo</td>
                           <td data-status="PACKING">
                             <span class="status status__packing"
@@ -1039,7 +1037,128 @@
                             >
                           </td>
                           <td>
-                            24, Lorem Ipsum, the printing, typesetting industry.
+                            <div class="d-flex justify-content-start">
+                              <button
+                                type="button"
+                                class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                data-display="static"
+                              >
+                                <span class="sr-only">
+                                  <i class="ri-settings-3-line"></i>
+                                </span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">
+                                  <i class="ri-eye-line"></i>
+                                  Xem trước
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                  <i class="ri-pencil-line"></i>
+                                  Chỉnh sửa
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                  <i class="ri-delete-bin-line"></i>
+                                  Xóa
+                                </a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="token">#fx2650</td>
+                          <td>Cvira Venusio</td>
+                          <td>10/14/2024</td>
+                          <td>5.000.000VND</td>
+                          <td>Momo</td>
+                          <td data-status="SHIPPING">
+                            <span class="status status__shipping"
+                              >Đang vận chuyển</span
+                            >
+                          </td>
+                          <td>
+                            <div class="d-flex justify-content-start">
+                              <button
+                                type="button"
+                                class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                data-display="static"
+                              >
+                                <span class="sr-only">
+                                  <i class="ri-settings-3-line"></i>
+                                </span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">
+                                  <i class="ri-eye-line"></i>
+                                  Xem trước
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                  <i class="ri-pencil-line"></i>
+                                  Chỉnh sửa
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                  <i class="ri-delete-bin-line"></i>
+                                  Xóa
+                                </a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="token">#fx2650</td>
+                          <td>Dvira Venusio</td>
+                          <td>10/14/2024</td>
+                          <td>3.000.000VND</td>
+                          <td>Momo</td>
+                          <td data-status="COMPLETE_DELIVERY">
+                            <span class="status status__completed"
+                              >Đã hoàn thành</span
+                            >
+                          </td>
+                          <td>
+                            <div class="d-flex justify-content-start">
+                              <button
+                                type="button"
+                                class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                data-display="static"
+                              >
+                                <span class="sr-only">
+                                  <i class="ri-settings-3-line"></i>
+                                </span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">
+                                  <i class="ri-eye-line"></i>
+                                  Xem trước
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                  <i class="ri-pencil-line"></i>
+                                  Chỉnh sửa
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                  <i class="ri-delete-bin-line"></i>
+                                  Xóa
+                                </a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="token">#fx2650</td>
+                          <td>Evira Venusio</td>
+                          <td>10/14/2024</td>
+                          <td>7.000.000VND</td>
+                          <td>Momo</td>
+                          <td data-status="CANCELED">
+                            <span class="status status__canceled">Đã hủy</span>
                           </td>
                           <td>
                             <div class="d-flex justify-content-start">
@@ -1076,13 +1195,12 @@
                           <td class="token">#fx2650</td>
                           <td>Avira Venusio</td>
                           <td>10/14/2024</td>
-                          <td>1.000.000VND</td>
+                          <td>500.000VND</td>
                           <td>Momo</td>
-                          <td data-status="SHIPPING"><span class="status status__shipping"
-                            >Đang vận chuyển</span
-                          ></td>
-                          <td>
-                            24, Lorem Ipsum, the printing, typesetting industry.
+                          <td data-status="REQUEST_REFUND">
+                            <span class="status status__request_refund"
+                              >Yêu cầu trả hàng</span
+                            >
                           </td>
                           <td>
                             <div class="d-flex justify-content-start">
@@ -1117,144 +1235,14 @@
                         </tr>
                         <tr>
                           <td class="token">#fx2650</td>
-                          <td>Avira Venusio</td>
+                          <td>Jvira Venusio</td>
                           <td>10/14/2024</td>
-                          <td>1.000.000VND</td>
+                          <td>10.000.000VND</td>
                           <td>Momo</td>
-                          <td data-status="COMPLETE_DELIVERY"><span class="status status__completed"
-                            >Đã hoàn thành</span
-                          ></td>
-                          <td>
-                            24, Lorem Ipsum, the printing, typesetting industry.
-                          </td>
-                          <td>
-                            <div class="d-flex justify-content-start">
-                              <button
-                                type="button"
-                                class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                                data-display="static"
-                              >
-                                <span class="sr-only">
-                                  <i class="ri-settings-3-line"></i>
-                                </span>
-                              </button>
-                              <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">
-                                  <i class="ri-eye-line"></i>
-                                  Xem trước
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                  <i class="ri-pencil-line"></i>
-                                  Chỉnh sửa
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                  <i class="ri-delete-bin-line"></i>
-                                  Xóa
-                                </a>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="token">#fx2650</td>
-                          <td>Avira Venusio</td>
-                          <td>10/14/2024</td>
-                          <td>1.000.000VND</td>
-                          <td>Momo</td>
-                          <td data-status="CANCELED"><span class="status status__canceled"
-                            >Đã hủy</span
-                          ></td>
-                          <td>
-                            24, Lorem Ipsum, the printing, typesetting industry.
-                          </td>
-                          <td>
-                            <div class="d-flex justify-content-start">
-                              <button
-                                type="button"
-                                class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                                data-display="static"
-                              >
-                                <span class="sr-only">
-                                  <i class="ri-settings-3-line"></i>
-                                </span>
-                              </button>
-                              <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">
-                                  <i class="ri-eye-line"></i>
-                                  Xem trước
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                  <i class="ri-pencil-line"></i>
-                                  Chỉnh sửa
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                  <i class="ri-delete-bin-line"></i>
-                                  Xóa
-                                </a>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="token">#fx2650</td>
-                          <td>Avira Venusio</td>
-                          <td>10/14/2024</td>
-                          <td>1.000.000VND</td>
-                          <td>Momo</td>
-                          <td data-status="REQUEST_REFUND"><span class="status status__request_refund"
-                            >Yêu cầu trả hàng</span
-                          ></td>
-                          <td>
-                            24, Lorem Ipsum, the printing, typesetting industry.
-                          </td>
-                          <td>
-                            <div class="d-flex justify-content-start">
-                              <button
-                                type="button"
-                                class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                                data-display="static"
-                              >
-                                <span class="sr-only">
-                                  <i class="ri-settings-3-line"></i>
-                                </span>
-                              </button>
-                              <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">
-                                  <i class="ri-eye-line"></i>
-                                  Xem trước
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                  <i class="ri-pencil-line"></i>
-                                  Chỉnh sửa
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                  <i class="ri-delete-bin-line"></i>
-                                  Xóa
-                                </a>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="token">#fx2650</td>
-                          <td>Avira Venusio</td>
-                          <td>10/14/2024</td>
-                          <td>1.000.000VND</td>
-                          <td>Momo</td>
-                          <td data-status="REFUNDED"><span class="status status__refunded"
-                            >Hoàn trả</span
-                          ></td>
-                          <td>
-                            24, Lorem Ipsum, the printing, typesetting industry.
+                          <td data-status="REFUNDED">
+                            <span class="status status__refunded"
+                              >Hoàn trả</span
+                            >
                           </td>
                           <td>
                             <div class="d-flex justify-content-start">

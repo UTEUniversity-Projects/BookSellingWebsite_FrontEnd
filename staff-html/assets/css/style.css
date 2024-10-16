@@ -1221,10 +1221,10 @@ button.btn.btn-outline-success.dropdown-toggle.dropdown-toggle-split {
   color: #6c757d;
   background-color: #d8dbdd;
 }
-.dropdown-menu__status a[data-value=WAITING_CONFIRMATION] {
+.dropdown-menu__status a[data-value=WAITING_CONFIRMATION], .dropdown-menu__status a[data-value=COMING_SOON] {
   border-radius: 5px;
 }
-.dropdown-menu__status a[data-value=WAITING_CONFIRMATION]:hover {
+.dropdown-menu__status a[data-value=WAITING_CONFIRMATION]:hover, .dropdown-menu__status a[data-value=COMING_SOON]:hover {
   color: #ffc107;
   background-color: #fff4d3;
 }
@@ -1242,17 +1242,17 @@ button.btn.btn-outline-success.dropdown-toggle.dropdown-toggle-split {
   color: #007bff;
   background-color: #cce5ff;
 }
-.dropdown-menu__status a[data-value=COMPLETE_DELIVERY] {
+.dropdown-menu__status a[data-value=COMPLETE_DELIVERY], .dropdown-menu__status a[data-value=ON_SALE] {
   border-radius: 5px;
 }
-.dropdown-menu__status a[data-value=COMPLETE_DELIVERY]:hover {
+.dropdown-menu__status a[data-value=COMPLETE_DELIVERY]:hover, .dropdown-menu__status a[data-value=ON_SALE]:hover {
   color: #28a745;
   background-color: #afecbd;
 }
-.dropdown-menu__status a[data-value=CANCELED] {
+.dropdown-menu__status a[data-value=CANCELED], .dropdown-menu__status a[data-value=OUT_OF_STOCK] {
   border-radius: 5px;
 }
-.dropdown-menu__status a[data-value=CANCELED]:hover {
+.dropdown-menu__status a[data-value=CANCELED]:hover, .dropdown-menu__status a[data-value=OUT_OF_STOCK]:hover {
   color: #dc3545;
   background-color: #fae3e5;
 }
@@ -1263,10 +1263,10 @@ button.btn.btn-outline-success.dropdown-toggle.dropdown-toggle-split {
   color: #fd7e14;
   background-color: #ffedde;
 }
-.dropdown-menu__status a[data-value=REFUNDED] {
+.dropdown-menu__status a[data-value=REFUNDED], .dropdown-menu__status a[data-value=STOP_SELLING] {
   border-radius: 5px;
 }
-.dropdown-menu__status a[data-value=REFUNDED]:hover {
+.dropdown-menu__status a[data-value=REFUNDED]:hover, .dropdown-menu__status a[data-value=STOP_SELLING]:hover {
   color: #6c757d;
   background-color: #d8dbdd;
 }
@@ -3947,11 +3947,11 @@ table.dataTable .status__completed {
   color: #30cb83;
   background-color: #d3f4e5;
 }
-table.dataTable .status__canceled {
+table.dataTable .status__canceled, table.dataTable .status__out_of_stock {
   color: #dc3545;
   background-color: #fae3e5;
 }
-table.dataTable .status__pending {
+table.dataTable .status__pending, table.dataTable .status__coming_soon {
   color: #ffc107;
   background-color: #fff4d3;
 }
@@ -3963,15 +3963,15 @@ table.dataTable .status__shipping {
   color: #007bff;
   background-color: #cce5ff;
 }
-table.dataTable .status__complete_delivery {
+table.dataTable .status__complete_delivery, table.dataTable .status__on_sale {
   color: #28a745;
-  background-color: #afecbd;
+  background-color: #d8f6df;
 }
 table.dataTable .status__request_refund {
   color: #fd7e14;
   background-color: #ffedde;
 }
-table.dataTable .status__refunded {
+table.dataTable .status__refunded, table.dataTable .status__stop_selling {
   color: #6c757d;
   background-color: #d8dbdd;
 }
