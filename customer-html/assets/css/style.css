@@ -50,6 +50,185 @@
 
 -----------------------------------------------------------------------------------*/
 /* Typography */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
 /* Typography */
 /* Manrope */
 @font-face {
@@ -159,24 +338,9 @@
 /* Mixing */
 /* Components */
 /* Common css */
-body {
-  margin: 0;
-  background-color: #fff;
-  letter-spacing: 0.03rem;
-  overflow-x: hidden;
-}
-
 a {
   text-decoration: none;
   color: #000;
-}
-
-p {
-  margin-bottom: 0px;
-  font-size: 14px;
-  font-family: "Poppins", sans-serif;
-  color: #7a7a7a;
-  line-height: 1.75;
 }
 
 .cr-banner {
@@ -184,7 +348,7 @@ p {
   text-align: center;
 }
 .cr-banner h2 {
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 32px;
   font-weight: bold;
   color: #2b2b2d;
@@ -196,7 +360,7 @@ p {
 .section-title .cr-title {
   margin-bottom: 5px;
   padding: 0 64px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 30px;
   font-weight: 800;
   color: #2b2b2d;
@@ -314,7 +478,7 @@ p {
   transition: all 0.3s ease-in-out;
   padding: 8px 22px;
   font-size: 14px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   text-transform: capitalize;
   line-height: 1.2;
@@ -335,7 +499,7 @@ p {
   transition: all 0.3s ease-in-out;
   padding: 8px 22px;
   font-size: 14px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   text-transform: capitalize;
   line-height: 1.2;
@@ -522,11 +686,10 @@ p {
 }
 .cr-breadcrumb-image .cr-breadcrumb-title h2 {
   margin-bottom: 0;
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 19px;
   line-height: 1;
   font-weight: bold;
-  color: #2b2b2d;
 }
 .cr-breadcrumb-image .cr-breadcrumb-title span {
   font-family: "Poppins", sans-serif;
@@ -612,7 +775,8 @@ a.back-to-top .back-to-top-wrap svg path {
   border-color: #e9e9e9;
   box-shadow: none;
 }
-.cr-pagination .active > .page-link, .cr-pagination .page-link.active {
+.cr-pagination .active > .page-link,
+.cr-pagination .page-link.active {
   background-color: #64b496;
   border-color: #64b496;
   color: #fff;
@@ -735,6 +899,10 @@ a.back-to-top .back-to-top-wrap svg path {
     font-size: 20px;
   }
 }
+ul {
+  list-style-type: none;
+}
+
 /* Footer */
 .footer {
   position: relative;
@@ -801,7 +969,7 @@ a.back-to-top .back-to-top-wrap svg path {
 }
 
 .cr-footer h4.cr-sub-title {
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.3;
@@ -1294,6 +1462,7 @@ header {
 }
 .top-header .cr-right-bar {
   display: flex;
+  align-items: center;
 }
 .top-header .cr-right-bar ul.navbar-nav li.nav-item .dropdown-toggle:after, .top-header .cr-right-bar ul.navbar-nav li.nav-item .dropdown-toggle:before {
   display: none;
@@ -1945,6 +2114,107 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
   font-size: 16px !important;
 }
 
+.notification {
+  position: relative;
+}
+.notification-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 0;
+}
+.notification-body {
+  padding-left: 0;
+}
+.notification-body li {
+  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 5px;
+  transition: all linear 0.2s;
+}
+.notification-body li:hover {
+  background: #eee;
+}
+.notification-body li a {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  overflow: hidden;
+}
+.notification-view-all {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  transition: all 0.2s linear;
+}
+.notification-view-all:hover {
+  background: #eee;
+}
+
+.notification-content {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+  position: absolute;
+  width: 500px;
+  background: #fff;
+  box-shadow: rgba(149, 157, 165, 0.5) 0px -3px 24px;
+  right: 0%;
+  transform-origin: 434px -20px;
+  top: 40px;
+  --width: 12px;
+}
+.notification-content::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 0;
+  height: 20px;
+  width: 100%;
+  background: transparent;
+}
+.notification-content::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--width) * -1);
+  right: 60px;
+  width: 0;
+  height: 0;
+  border-left: var(--width) solid transparent;
+  border-right: var(--width) solid transparent;
+  border-bottom: var(--width) solid #fff;
+}
+
+.notification:hover .notification-content {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.account-list {
+  --width: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transform-origin: 130px -20px;
+  transform: scale(0);
+}
+.account-list::before {
+  content: "";
+  position: absolute;
+  top: calc(var(--width) * -1);
+  right: 50px;
+  width: 0;
+  height: 0;
+  border-left: var(--width) solid transparent;
+  border-right: var(--width) solid transparent;
+  border-bottom: var(--width) solid #fff;
+}
+.account:hover .account-list {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
 /* layout */
 /* Hero */
 .cr-hero-banner {
@@ -2105,7 +2375,7 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
 .cr-left-side-contain h1 {
   margin-bottom: 25px;
   font-size: 55px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 800;
   line-height: 68px;
   color: #000;
@@ -2126,7 +2396,7 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
 }
 .cr-left-side-contain .cr-last-buttons h4 span {
   font-size: 30px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   color: #000;
 }
@@ -2293,6 +2563,7 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
   right: -230px;
   z-index: 20;
   color: #000;
+  overflow-y: scroll;
 }
 .cr-tool .cr-tool-btn {
   display: flex;
@@ -2736,7 +3007,7 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
 .cr-deal-rightside .cr-deal-content h4.cr-deal-title {
   margin-top: 12px;
   margin-bottom: 15px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 28px;
   font-weight: bold;
   line-height: 1.2;
@@ -2800,7 +3071,8 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
   .cr-counter .cr-counter-inner h4 span {
     font-size: 18px;
   }
-  .bg-banner-deal, .cr-deal-rightside {
+  .bg-banner-deal,
+  .cr-deal-rightside {
     height: 500px;
   }
 }
@@ -2868,7 +3140,8 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
   }
 }
 @media only screen and (max-width: 360px) {
-  .bg-banner-deal, .cr-deal-rightside {
+  .bg-banner-deal,
+  .cr-deal-rightside {
     height: 450px;
   }
 }
@@ -3161,7 +3434,7 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
 }
 .cr-ice-cubes .cr-ice-cubes-contain h4.title {
   margin-bottom: 5px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 40px;
   color: #fff;
   font-weight: 300;
@@ -3169,7 +3442,7 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
 }
 .cr-ice-cubes .cr-ice-cubes-contain h5.sub-title {
   margin-bottom: 5px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-size: 38px;
   color: #f7e8aa;
@@ -3239,7 +3512,7 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
 }
 .cr-products-rightbar .cr-products-rightbar-content h4 {
   margin-bottom: 0px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 900;
   line-height: 1.562;
@@ -3254,7 +3527,7 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
 .cr-products-rightbar .cr-products-rightbar-content .cr-off span {
   margin-left: 7px;
   padding: 0 6px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 900;
   line-height: 1.2;
@@ -3306,7 +3579,7 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
   flex-direction: column;
 }
 .cr-products-leftbar .cr-products-leftbar-content h2 {
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 44px;
   font-weight: bold;
   line-height: 1.2;
@@ -3327,10 +3600,12 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
   color: #7a7a7a;
 }
 
-.cr-popular-product, .cr-twocolumns-product {
+.cr-popular-product,
+.cr-twocolumns-product {
   margin: 0 -12px;
 }
-.cr-popular-product .slick-slide, .cr-twocolumns-product .slick-slide {
+.cr-popular-product .slick-slide,
+.cr-twocolumns-product .slick-slide {
   padding: 0 12px;
 }
 
@@ -3534,7 +3809,7 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
 }
 .cr-product-banner-image .cr-product-banner-contain h5 {
   margin-bottom: 15px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: bold;
   line-height: 1.2;
@@ -3677,7 +3952,7 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
 }
 .cr-side-categories .categories-inner h4 {
   margin: 0;
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 54px;
   font-weight: bold;
   text-transform: uppercase;
@@ -3701,7 +3976,7 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
 }
 .cr-side-categories .categories-contain .categories-text h5 {
   margin-bottom: 12px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 22px;
   font-weight: bold;
   line-height: 1.2;
@@ -3763,7 +4038,7 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
   padding: 26px 0;
   text-align: center;
   margin-bottom: 0px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #2b2b2d;
   font-weight: 700;
   line-height: 1.429;
@@ -3783,7 +4058,7 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
   font-size: 16px;
   display: flex;
   justify-content: center;
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   color: #64b496 !important;
   font-weight: bold;
@@ -4120,7 +4395,7 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
 .cr-blog .cr-blog-content a {
   transition: all 0.3s ease-in-out;
   position: relative;
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.875;
@@ -4131,7 +4406,7 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
 }
 .cr-blog .cr-blog-content .read {
   position: relative;
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: bold;
   line-height: 1.875;
@@ -4164,7 +4439,7 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
   z-index: 2;
 }
 .cr-blog .cr-blog-image .cr-blog-date span {
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 23px;
   font-weight: bold;
   line-height: 1.1;
@@ -4427,6 +4702,10 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
 }
 /* pages */
 /* Products-page */
+.section-related-products {
+  padding: 0 0 70px;
+}
+
 .cr-product-card {
   height: 100%;
   padding: 12px;
@@ -4775,6 +5054,9 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
 .cr-size-and-weight .cr-add-card .cr-add-button {
   margin-left: 15px;
 }
+.cr-size-and-weight .cr-add-card .cr-buy-button {
+  margin-left: 15px;
+}
 .cr-size-and-weight .cr-add-card .cr-card-icon {
   margin-left: 15px;
   display: flex;
@@ -5007,48 +5289,58 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
   color: #777;
   outline: none;
 }
-.cr-tab-content-from .post {
-  margin-bottom: 30px;
-}
-.cr-tab-content-from .post .content {
+.cr-tab-content-from .review-list {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 0 10px;
+  margin-bottom: 40px;
 }
-.cr-tab-content-from .post .content img {
+.cr-tab-content-from .review-list .review-item {
+  display: flex;
+  flex-direction: column;
+}
+.cr-tab-content-from .review-list .review-item__top {
+  display: flex;
+  justify-content: center;
+}
+.cr-tab-content-from .review-list .review-item__top img {
   width: 50px;
   height: 50px;
   margin-right: 24px;
   border-radius: 5px;
 }
-.cr-tab-content-from .post .content .details {
+.cr-tab-content-from .review-list .review-item__top .details {
   display: flex;
   flex-direction: column;
 }
-.cr-tab-content-from .post .content .details .date {
+.cr-tab-content-from .review-list .review-item__top .details .date {
   margin-bottom: 10px;
   font-size: 13px;
   color: #777;
 }
-.cr-tab-content-from .post .content .details .name {
+.cr-tab-content-from .review-list .review-item__top .details .name {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 17px;
 }
-.cr-tab-content-from .post p {
+.cr-tab-content-from .review-list p {
   padding-left: 74px;
 }
-.cr-tab-content-from .post .cr-t-review-rating {
+.cr-tab-content-from .review-list .cr-t-review-rating {
   margin-left: auto;
   margin-bottom: 20px;
 }
-.cr-tab-content-from .post .cr-t-review-rating i {
+.cr-tab-content-from .review-list .cr-t-review-rating i {
   font-size: 19px;
   letter-spacing: 0;
 }
-.cr-tab-content-from .post .cr-t-review-rating .ri-star-s-fill {
+.cr-tab-content-from .review-list .cr-t-review-rating .ri-star-s-fill {
   color: #f5885f;
   letter-spacing: -5px;
 }
-.cr-tab-content-from .post .cr-t-review-rating .ri-star-s-line {
+.cr-tab-content-from .review-list .cr-t-review-rating .ri-star-s-line {
   color: #999;
 }
 
@@ -5087,7 +5379,8 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
     font-size: 12px;
     margin-right: 5px;
   }
-  .cr-add-button .cr-button {
+  .cr-add-button .cr-button,
+  .cr-buy-button .cr-button {
     padding: 8px 15px;
   }
 }
@@ -5177,13 +5470,19 @@ ul.navbar-nav .dropdown:hover .dropdown-menu {
   .cr-size-and-weight .cr-review-star p {
     display: none;
   }
-  .cr-size-and-weight .cr-size-weight {
+  .cr-size-and-weight .cr-buy-button {
+    display: none;
+  }
+  .cr-size-and-weight .cr-size-and-weight .cr-review-star p {
+    display: none;
+  }
+  .cr-size-and-weight .cr-size-and-weight .cr-size-weight {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .cr-size-and-weight .cr-size-weight .cr-kg {
+  .cr-size-and-weight .cr-size-and-weight .cr-size-weight .cr-kg {
     padding: 10px 0 0 0;
   }
 }
@@ -5435,7 +5734,15 @@ h4.cr-shop-sub-title {
   background-color: #64b496;
 }
 
-.cr-shop-weight {
+.cr-shop-condition {
+  padding-top: 25px;
+}
+
+.cr-shop-binding {
+  padding-top: 25px;
+}
+
+.cr-shop-rating {
   padding-top: 25px;
 }
 
@@ -5757,7 +6064,7 @@ ul.cr-tags li a:hover {
 .cr-blog-classic .cr-blog-classic-content h4 {
   margin-bottom: 0px;
   padding-bottom: 15px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.2;
@@ -5768,7 +6075,7 @@ ul.cr-tags li a:hover {
   font-size: 14px;
 }
 .cr-blog-classic .cr-blog-classic-content a {
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: bold;
   line-height: 1.875;
@@ -6236,7 +6543,7 @@ ul.cr-tags li a:hover {
 }
 .cr-about h4.heading {
   margin-bottom: 16px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 46px;
@@ -6271,7 +6578,7 @@ ul.cr-tags li a:hover {
   border: 1px solid #e9e9e9;
 }
 .cr-about-content h4.elementor {
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 60px;
   font-weight: 700;
   line-height: 1;
@@ -6290,7 +6597,7 @@ ul.cr-tags li a:hover {
   text-align: center;
 }
 .cr-about-content .elementor-counter-title span {
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 1;
@@ -6354,7 +6661,7 @@ ul.cr-tags li a:hover {
   color: #64b496;
 }
 .cr-info-box .cr-info-content h4.heading {
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: bold;
   color: #2b2b2d;
@@ -6636,7 +6943,7 @@ iframe {
   position: relative;
   cursor: pointer;
   color: #777;
-  font-weight: 400;
+  font-weight: normal;
 }
 .cr-login .cr-content-form .custom label:before {
   content: "";
@@ -6708,6 +7015,60 @@ iframe {
   font-size: 14px;
   color: #777;
 }
+.cr-register form .terms {
+  margin-bottom: 20px;
+  color: #777;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.cr-register form .terms .custom {
+  margin: 0;
+}
+.cr-register form .terms .custom input {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  padding: 0;
+  display: none;
+  cursor: pointer;
+}
+.cr-register form .terms .custom input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 6px;
+  width: 6px;
+  height: 11px;
+  border: solid #64b496;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.cr-register form .terms .custom label {
+  margin: 0;
+  position: relative;
+  cursor: pointer;
+  color: #777;
+  font-weight: normal;
+  line-height: 2;
+}
+.cr-register form .terms .custom label:before {
+  content: "";
+  margin-right: 10px;
+  padding: 8px;
+  background-color: transparent;
+  border: 1px solid #e9e9e9;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.cr-register form .terms .custom label .link {
+  color: #64b496;
+}
 
 .cr-register-buttons {
   text-align: center;
@@ -6723,6 +7084,14 @@ iframe {
 .cr-register-buttons .link {
   padding: 8px 0;
   color: #777;
+}
+
+.has-error .cr-form-control {
+  border: 1px solid red;
+}
+
+.has-error .error-message {
+  margin-top: 5px;
 }
 
 /* elemets-products */
@@ -6825,7 +7194,12 @@ iframe {
 .typography h1 {
   font-size: 38px;
 }
-.typography .cr-disc, .typography .cr-decimal, .typography .cr-alpha, .typography .cr-roman, .typography .cr-greek, .typography .cr-hebrew {
+.typography .cr-disc,
+.typography .cr-decimal,
+.typography .cr-alpha,
+.typography .cr-roman,
+.typography .cr-greek,
+.typography .cr-hebrew {
   padding: 5px 20px;
   margin-bottom: 0;
   color: #777;
@@ -6833,7 +7207,7 @@ iframe {
   line-height: 30px;
   text-align: justify;
   letter-spacing: 1px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .typography .cr-disc li {
   margin-bottom: 15px;
@@ -6864,7 +7238,11 @@ iframe {
   list-style-type: hebrew;
 }
 
-.typography h1, .typography h2, .typography h3, .typography h4, .typography h5 {
+.typography h1,
+.typography h2,
+.typography h3,
+.typography h4,
+.typography h5 {
   margin-bottom: 30px;
   font-family: "Montserrat";
 }
@@ -7649,6 +8027,54 @@ iframe {
     border-bottom: 1px solid #e9e9e9;
   }
 }
+table {
+  table-layout: auto;
+}
+
+.order_item::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: #26aa99;
+  transform-origin: 50% 50%;
+  transition: 0.2s all linear;
+}
+.order_item:hover::after {
+  width: 100%;
+}
+.order_item.active {
+  color: #6eb79c;
+}
+.order_item.active::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #6eb79c;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  position: absolute;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
 /*-------------------------------------------------
   Checkout Page CSS
 ---------------------------------------------------*/
@@ -7754,7 +8180,6 @@ iframe {
   position: relative;
   display: block;
   color: #2b2b2d;
-  font-family: "Montserrat";
   line-height: 1;
 }
 .cr-checkout-wrap .cr-check-login h3 {
@@ -7842,7 +8267,7 @@ iframe {
   line-height: 24px;
   color: #7a7a7a;
   letter-spacing: 0;
-  max-width: 64%;
+  max-width: 66%;
 }
 
 .cr-new-btn {
@@ -8052,12 +8477,12 @@ iframe {
   font-size: 16px;
   font-weight: 600;
   color: #2b2b2d;
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .cr-checkout-summary .cr-checkout-summary-total .text-right {
   font-size: 16px;
   font-weight: 600;
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /*-----  Sidebar Page CSS  ------*/
@@ -8349,6 +8774,7 @@ iframe {
   margin-bottom: 24px;
 }
 .cr-common-wrapper .cr-cgi-block h5 {
+  margin-top: 8px;
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: 700;
@@ -8363,5 +8789,19 @@ iframe {
     margin-bottom: 24px;
   }
 }
+
+.verify-email::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: calc(50% - 8px);
+  transform: translateY(calc(-50% + 8px));
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid rgba(254, 202, 202, 0.5);
+}
+
 
 /*# sourceMappingURL=style.css.map */

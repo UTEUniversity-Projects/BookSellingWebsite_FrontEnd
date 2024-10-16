@@ -675,7 +675,6 @@
           }
           return false;
         });
-
         table.draw();
       });
     }
@@ -711,7 +710,6 @@
           }
           return false;
         });
-
         table.draw();
       });
     }
