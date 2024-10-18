@@ -33,11 +33,11 @@
 				}
 
 				.cr-sb-item {
-					>a {
+					> a {
 						display: flex;
 						justify-content: center;
 
-						>i {
+						> i {
 							margin-right: 0;
 							font-size: 21px;
 						}
@@ -69,11 +69,11 @@
 					}
 
 					.cr-sb-item {
-						>a {
+						> a {
 							display: flex;
 							justify-content: flex-start;
 
-							>i {
+							> i {
 								margin-right: 10px;
 								font-size: 19px;
 							}
@@ -157,18 +157,18 @@
 	.cr-sb-wrapper {
 		@include ease3;
 		height: calc(100vh - 70px);
-		overflow-Y: scroll;
+		overflow-y: scroll;
 		overflow-x: hidden;
 		padding: 24px 15px 24px 24px;
 		&::-webkit-scrollbar {
 			position: absolute;
 			width: 7px;
-		  }
+		}
 		&::-webkit-scrollbar-thumb {
 			background-color: transparent;
 			border-radius: 5px;
 		}
-		&:hover {			
+		&:hover {
 			@include hoverscrollbar;
 		}
 
@@ -228,7 +228,7 @@
 			.sb-subdrop-item {
 				padding-left: 25px;
 
-				>a {
+				> a {
 					@include ease3;
 					width: 100%;
 					color: $text-555;
@@ -293,7 +293,7 @@
 						color: $sb-item-color-hover;
 					}
 
-					>i {
+					> i {
 						margin-right: 10px;
 						font-size: 19px;
 					}
@@ -310,13 +310,13 @@
 			}
 
 			.cr-sb-item.active {
-				>a {
+				> a {
 					color: $sb-item-color-hover;
 				}
 			}
 
 			.load-active {
-				>a {
+				> a {
 					color: $sb-item-color-hover;
 				}
 			}
@@ -352,16 +352,15 @@
 				}
 			}
 		}
-
 	}
 }
 
 [data-mode="light"] {
-	background-color: rgba(236, 238, 240, 0.93);
+	background-color: $gray;
 	border-right: 1px solid #e1e1e1;
 	overflow: hidden !important;
 	.cr-sb-logo {
-		background-color: rgba(236, 238, 240, 0.93);
+		background-color: $gray;
 		border-bottom: 1px solid #e1e1e1;
 	}
 	.cr-sb-wrapper {
@@ -388,7 +387,7 @@
 				}
 			}
 			.cr-sb-item {
-				a{
+				a {
 					padding: 10px 0;
 					color: $text-555;
 					&:hover {
@@ -402,7 +401,7 @@
 [data-mode="dark"] {
 	background-color: $gray;
 	.cr-sb-logo {
-		background-color: rgba(24, 30, 40, .7) !important;
+		background-color: rgba(24, 30, 40, 0.7) !important;
 	}
 	.cr-sb-wrapper {
 		.cr-sb-list {
@@ -417,7 +416,7 @@
 				}
 			}
 			.cr-sb-item {
-				a{
+				a {
 					padding: 10px 0;
 					color: #9ba2ad;
 					&:hover {
@@ -435,7 +434,7 @@
 	background-repeat: no-repeat;
 	background-blend-mode: overlay;
 	.cr-sb-logo {
-		background-color: rgba(24, 30, 40, .4) !important;
+		background-color: rgba(24, 30, 40, 0.4) !important;
 	}
 	.cr-sb-wrapper {
 		.cr-sb-list {
@@ -452,16 +451,16 @@
 		}
 	}
 }
-[data-mode="bg-2"]{
+[data-mode="bg-2"] {
 	background: url("../img/sidebar/2.jpg");
 	background-color: $gray;
 	background-size: 270px;
 	background-repeat: no-repeat;
 	background-blend-mode: overlay;
 	background-position: top left;
-    background-attachment: fixed;
+	background-attachment: fixed;
 	.cr-sb-logo {
-		background-color: rgba(24, 30, 40, .4) !important;
+		background-color: rgba(24, 30, 40, 0.4) !important;
 	}
 	.cr-sb-wrapper {
 		.cr-sb-list {
@@ -478,16 +477,16 @@
 		}
 	}
 }
-[data-mode="bg-3"]{
+[data-mode="bg-3"] {
 	background: url("../img/sidebar/3.jpg");
 	background-color: $gray;
 	background-size: 270px;
 	background-repeat: no-repeat;
 	background-blend-mode: overlay;
 	background-position: top left;
-    background-attachment: fixed;
+	background-attachment: fixed;
 	.cr-sb-logo {
-		background-color: rgba(24, 30, 40, .4) !important;
+		background-color: rgba(24, 30, 40, 0.4) !important;
 	}
 	.cr-sb-wrapper {
 		.cr-sb-list {
@@ -504,16 +503,16 @@
 		}
 	}
 }
-[data-mode="bg-4"]{
+[data-mode="bg-4"] {
 	background: url("../img/sidebar/4.jpg");
 	background-color: $gray;
 	background-size: 270px;
 	background-repeat: no-repeat;
 	background-blend-mode: overlay;
 	background-position: top left;
-    background-attachment: fixed;
+	background-attachment: fixed;
 	.cr-sb-logo {
-		background-color: rgba(24, 30, 40, .4) !important;
+		background-color: rgba(24, 30, 40, 0.4) !important;
 	}
 	.cr-sb-wrapper {
 		.cr-sb-list {
@@ -545,7 +544,7 @@
 		height: 100vh;
 		position: fixed;
 		top: 0;
-		background-color: rgba(0, 0, 0, .5);
+		background-color: rgba(0, 0, 0, 0.5);
 		z-index: 40;
 		display: none;
 	}
@@ -597,10 +596,10 @@
 				.cr-sb-wrapper {
 					.cr-sb-list {
 						.cr-sb-item {
-							>a {
+							> a {
 								justify-content: center;
 
-								>i {
+								> i {
 									margin-right: 0;
 									font-size: 21px;
 								}
@@ -637,7 +636,7 @@
 				.cr-sb-wrapper {
 					.cr-sb-list {
 						.cr-sb-item {
-							>a {
+							> a {
 								justify-content: flex-start;
 
 								i {
@@ -648,11 +647,10 @@
 					}
 				}
 				.cr-sb-logo {
-
 					.sb-full {
 						display: block !important;
 					}
-	
+
 					.sb-collapse {
 						display: none;
 					}
@@ -662,7 +660,7 @@
 			.cr-sb-wrapper {
 				.cr-sb-list {
 					.cr-sb-item {
-						>a {
+						> a {
 							justify-content: flex-start;
 
 							i {
@@ -674,7 +672,6 @@
 			}
 
 			.cr-sb-logo {
-
 				.sb-full {
 					display: block;
 				}
@@ -683,7 +680,6 @@
 					display: none;
 				}
 			}
-
 		}
 	}
 

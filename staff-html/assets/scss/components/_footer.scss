@@ -16,7 +16,7 @@ footer {
 	width: calc(100% - 270px);
 	margin-left: 270px;
 	padding: 15px;
-	background-color: rgba(236, 238, 240, 0.93);
+	background-color: $gray;
 	border-top: 1px solid #e1e1e1;
 	.copyright {
 		display: flex;
@@ -55,7 +55,8 @@ footer {
 	}
 }
 @media only screen and (max-width: 575px) {
-	.sb-collapse, .sb-default {
+	.sb-collapse,
+	.sb-default {
 		footer {
 			width: 100%;
 			margin-left: 0;
